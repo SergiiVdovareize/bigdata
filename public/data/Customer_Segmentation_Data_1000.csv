@@ -1,0 +1,1001 @@
+Customer ID,Service Type,Tariff Type,Date of Birth,Location,Monthly Spending,Customer Status,Service Rating,Sign-up Date
+1,Mobile,Business,1993-01-27,Zaporizhzhia,500+ UAH,Active,2,2004-03-06
+2,Internet,Special,1975-07-06,Zaporizhzhia,500+ UAH,Active,3,2017-05-02
+3,Internet,Premium,2018-05-27,Kharkiv,100-200 UAH,Potential,4,2007-06-30
+4,TV,Business,1992-07-25,Zaporizhzhia,<100 UAH,Potential,2,2016-01-06
+5,Mobile,Special,2010-10-02,Odesa,100-200 UAH,Potential,1,2015-07-02
+6,Mobile,Business,2004-01-21,Kyiv,<100 UAH,Inactive,4,2021-11-12
+7,Internet,Business,1990-04-11,Poltava,<100 UAH,Active,4,2002-06-13
+8,Fixed Line,Special,2019-02-01,Zaporizhzhia,100-200 UAH,Inactive,2,2000-01-18
+9,IoT,Economy,2002-11-01,Lviv,100-200 UAH,Inactive,2,2016-05-18
+10,Fixed Line,Standard,2007-11-06,Odesa,100-200 UAH,Potential,1,2012-06-16
+11,Mobile,Business,1971-01-31,Poltava,500+ UAH,Potential,1,2015-02-17
+12,TV,Business,2000-06-09,Kharkiv,500+ UAH,Active,4,2016-07-03
+13,Fixed Line,Business,2017-03-24,Kharkiv,<100 UAH,Inactive,5,2010-10-23
+14,Fixed Line,Standard,1982-02-03,Kyiv,100-200 UAH,Inactive,4,2007-10-23
+15,Mobile,Business,1982-07-04,Lviv,200-500 UAH,Active,5,2016-11-15
+16,Internet,Business,2012-06-25,Zaporizhzhia,<100 UAH,Potential,1,2008-04-29
+17,Mobile,Special,2017-03-27,Kharkiv,<100 UAH,Potential,3,2013-08-17
+18,Fixed Line,Economy,1988-07-21,Dnipro,500+ UAH,Potential,2,2019-07-27
+19,Fixed Line,Premium,2003-10-07,Kyiv,200-500 UAH,Potential,2,2003-06-21
+20,TV,Premium,2015-10-02,Kyiv,200-500 UAH,Active,2,2000-03-12
+21,Fixed Line,Standard,1974-10-03,Odesa,500+ UAH,Active,5,2005-08-16
+22,TV,Premium,1994-03-26,Odesa,<100 UAH,Active,5,2017-06-19
+23,Fixed Line,Economy,2009-01-05,Odesa,500+ UAH,Active,4,2012-05-31
+24,Internet,Premium,2002-05-28,Poltava,200-500 UAH,Active,1,2020-09-21
+25,Fixed Line,Economy,1976-04-27,Zaporizhzhia,500+ UAH,Potential,3,2011-12-31
+26,TV,Economy,2012-12-21,Zaporizhzhia,100-200 UAH,Potential,5,2005-10-27
+27,TV,Special,2000-11-18,Zaporizhzhia,100-200 UAH,Inactive,4,2016-10-10
+28,TV,Premium,2017-07-02,Kharkiv,<100 UAH,Potential,4,2014-05-27
+29,Fixed Line,Business,2000-01-26,Poltava,<100 UAH,Inactive,1,2017-12-22
+30,TV,Standard,2010-09-14,Vinnytsia,500+ UAH,Potential,4,2014-08-18
+31,IoT,Business,2019-05-03,Poltava,100-200 UAH,Potential,3,2009-11-24
+32,Internet,Premium,2009-05-06,Kyiv,<100 UAH,Active,1,2006-01-25
+33,Fixed Line,Premium,1994-07-21,Lviv,100-200 UAH,Potential,2,2001-03-20
+34,TV,Business,1999-05-28,Dnipro,500+ UAH,Inactive,3,2006-09-29
+35,Internet,Special,1998-08-23,Kharkiv,200-500 UAH,Active,2,2001-01-05
+36,Fixed Line,Premium,1972-06-21,Kharkiv,200-500 UAH,Active,3,2009-06-02
+37,Internet,Special,1989-04-02,Lviv,200-500 UAH,Potential,2,2004-12-11
+38,IoT,Standard,1991-02-06,Kharkiv,<100 UAH,Active,4,2015-05-31
+39,Fixed Line,Premium,1976-06-23,Lviv,200-500 UAH,Inactive,5,2004-10-27
+40,TV,Business,1972-01-24,Poltava,100-200 UAH,Inactive,5,2001-10-13
+41,Mobile,Special,1970-03-28,Vinnytsia,500+ UAH,Inactive,3,2018-05-16
+42,TV,Standard,1987-10-30,Lviv,100-200 UAH,Inactive,2,2001-04-25
+43,Fixed Line,Economy,1982-02-13,Kyiv,100-200 UAH,Active,3,2016-06-12
+44,TV,Standard,1997-10-01,Zaporizhzhia,500+ UAH,Inactive,4,2020-05-10
+45,Mobile,Special,2016-03-01,Kharkiv,500+ UAH,Inactive,5,2002-05-07
+46,Mobile,Premium,1971-12-14,Kharkiv,100-200 UAH,Inactive,2,2012-04-04
+47,Mobile,Premium,1991-10-01,Dnipro,100-200 UAH,Potential,2,2009-11-22
+48,TV,Economy,2003-05-12,Lviv,500+ UAH,Potential,4,2017-06-29
+49,Fixed Line,Special,1974-03-17,Dnipro,200-500 UAH,Active,5,2013-08-27
+50,TV,Premium,2000-07-30,Poltava,100-200 UAH,Inactive,2,2006-02-04
+51,Mobile,Premium,1988-06-11,Vinnytsia,500+ UAH,Active,5,2000-01-12
+52,IoT,Special,2008-03-28,Dnipro,200-500 UAH,Potential,1,2010-07-29
+53,Mobile,Standard,1982-05-16,Zaporizhzhia,500+ UAH,Potential,3,2019-08-01
+54,Mobile,Business,1976-03-03,Vinnytsia,100-200 UAH,Active,4,2019-10-30
+55,Fixed Line,Standard,1975-05-08,Dnipro,<100 UAH,Potential,2,2002-09-29
+56,TV,Special,1994-09-21,Odesa,200-500 UAH,Inactive,1,2018-11-07
+57,Fixed Line,Standard,1998-01-31,Kyiv,<100 UAH,Potential,2,2000-10-02
+58,TV,Premium,1980-12-06,Lviv,200-500 UAH,Inactive,1,2002-01-08
+59,Mobile,Special,1997-07-10,Kharkiv,200-500 UAH,Potential,1,2021-02-28
+60,Mobile,Premium,2005-11-13,Poltava,<100 UAH,Potential,5,2008-06-22
+61,Mobile,Premium,1982-06-25,Odesa,100-200 UAH,Active,4,2001-07-20
+62,TV,Premium,1970-07-05,Odesa,100-200 UAH,Potential,2,2010-04-21
+63,Mobile,Standard,2011-07-11,Odesa,100-200 UAH,Active,3,2001-01-04
+64,Fixed Line,Business,2012-02-27,Kharkiv,500+ UAH,Inactive,4,2000-05-10
+65,Fixed Line,Economy,1988-11-14,Odesa,100-200 UAH,Active,3,2012-04-21
+66,Mobile,Business,2016-11-17,Odesa,500+ UAH,Potential,2,2004-08-16
+67,IoT,Economy,2011-04-25,Kharkiv,200-500 UAH,Inactive,2,2013-08-15
+68,TV,Special,1985-11-10,Kyiv,100-200 UAH,Active,3,2007-05-01
+69,IoT,Business,1999-11-22,Zaporizhzhia,200-500 UAH,Active,2,2002-11-25
+70,Mobile,Economy,1990-03-12,Poltava,200-500 UAH,Active,1,2021-07-24
+71,IoT,Premium,1975-11-03,Poltava,500+ UAH,Active,1,2005-06-22
+72,TV,Special,1990-08-11,Vinnytsia,200-500 UAH,Potential,2,2001-05-10
+73,TV,Business,2012-02-26,Odesa,<100 UAH,Inactive,5,2006-02-08
+74,IoT,Standard,1996-02-20,Lviv,<100 UAH,Active,2,2005-07-06
+75,Internet,Special,2000-05-26,Kyiv,100-200 UAH,Active,2,2006-07-25
+76,TV,Premium,1987-12-25,Kharkiv,500+ UAH,Active,3,2007-10-16
+77,Mobile,Premium,1978-10-14,Kyiv,200-500 UAH,Potential,1,2017-08-20
+78,Mobile,Premium,1998-06-26,Kyiv,100-200 UAH,Potential,5,2001-04-23
+79,Mobile,Economy,1997-07-27,Dnipro,500+ UAH,Active,1,2007-10-07
+80,Internet,Business,2017-10-10,Kharkiv,<100 UAH,Active,5,2002-04-09
+81,Mobile,Special,1970-06-20,Kyiv,500+ UAH,Inactive,4,2021-07-06
+82,IoT,Business,2014-11-17,Poltava,<100 UAH,Inactive,4,2003-02-25
+83,Internet,Business,2016-04-05,Kharkiv,500+ UAH,Potential,5,2010-06-29
+84,TV,Economy,1982-01-09,Vinnytsia,500+ UAH,Active,2,2010-07-07
+85,Internet,Economy,1972-04-13,Odesa,<100 UAH,Potential,1,2017-02-09
+86,Mobile,Premium,2012-05-31,Zaporizhzhia,200-500 UAH,Active,3,2005-12-17
+87,Mobile,Business,1978-06-11,Kharkiv,<100 UAH,Inactive,4,2016-02-28
+88,IoT,Economy,1989-10-31,Kyiv,500+ UAH,Inactive,3,2000-07-29
+89,TV,Premium,1992-08-23,Kharkiv,<100 UAH,Potential,2,2020-04-22
+90,TV,Special,1986-03-29,Dnipro,100-200 UAH,Potential,5,2002-03-02
+91,Internet,Economy,1991-04-25,Zaporizhzhia,100-200 UAH,Potential,3,2010-07-13
+92,Mobile,Economy,1985-07-21,Vinnytsia,100-200 UAH,Inactive,2,2003-10-19
+93,Mobile,Special,1996-03-30,Poltava,100-200 UAH,Active,2,2008-01-27
+94,Internet,Special,1972-01-01,Dnipro,<100 UAH,Active,3,2014-01-23
+95,Fixed Line,Economy,1999-07-13,Dnipro,<100 UAH,Potential,1,2003-02-13
+96,Mobile,Special,1977-08-22,Vinnytsia,200-500 UAH,Active,4,2006-05-01
+97,TV,Special,2018-10-15,Vinnytsia,<100 UAH,Active,4,2014-11-16
+98,Internet,Premium,2002-04-05,Zaporizhzhia,100-200 UAH,Potential,2,2018-07-01
+99,Internet,Economy,1970-05-25,Vinnytsia,200-500 UAH,Inactive,4,2012-12-26
+100,IoT,Special,1971-12-15,Kharkiv,200-500 UAH,Potential,2,2011-06-15
+101,Mobile,Premium,1983-06-24,Kyiv,500+ UAH,Potential,1,2002-05-26
+102,Mobile,Economy,2008-03-03,Odesa,<100 UAH,Potential,5,2003-03-18
+103,TV,Economy,1974-08-11,Lviv,<100 UAH,Active,5,2020-12-26
+104,Fixed Line,Economy,2003-01-30,Odesa,200-500 UAH,Potential,5,2000-01-21
+105,TV,Special,1997-07-24,Zaporizhzhia,500+ UAH,Potential,1,2010-08-11
+106,Fixed Line,Special,1991-10-24,Vinnytsia,200-500 UAH,Inactive,5,2016-07-25
+107,IoT,Business,1978-11-11,Dnipro,200-500 UAH,Inactive,5,2004-08-06
+108,TV,Premium,1971-08-21,Vinnytsia,<100 UAH,Potential,3,2010-01-24
+109,TV,Business,1995-08-08,Kyiv,100-200 UAH,Inactive,1,2010-10-19
+110,Mobile,Premium,1995-09-18,Vinnytsia,500+ UAH,Potential,5,2005-09-14
+111,TV,Standard,1970-09-29,Poltava,200-500 UAH,Inactive,3,2019-04-01
+112,Mobile,Business,2002-02-09,Vinnytsia,<100 UAH,Potential,5,2020-04-06
+113,IoT,Economy,1988-01-22,Kharkiv,500+ UAH,Inactive,2,2016-05-30
+114,Fixed Line,Standard,1994-01-18,Kharkiv,200-500 UAH,Active,5,2000-03-10
+115,TV,Standard,1992-12-09,Poltava,<100 UAH,Inactive,3,2013-10-10
+116,IoT,Standard,2004-11-09,Poltava,500+ UAH,Inactive,2,2005-01-30
+117,Mobile,Premium,1995-04-18,Kyiv,<100 UAH,Potential,1,2005-11-07
+118,Fixed Line,Special,1988-06-28,Kyiv,<100 UAH,Inactive,1,2004-01-10
+119,TV,Special,1979-10-27,Vinnytsia,<100 UAH,Inactive,1,2012-07-15
+120,TV,Standard,1971-06-30,Zaporizhzhia,200-500 UAH,Active,5,2009-10-13
+121,Internet,Special,1981-04-20,Zaporizhzhia,100-200 UAH,Potential,3,2004-03-28
+122,TV,Economy,2001-01-26,Dnipro,200-500 UAH,Active,1,2020-06-05
+123,IoT,Special,1982-11-25,Dnipro,200-500 UAH,Potential,3,2005-03-28
+124,TV,Premium,2003-11-30,Zaporizhzhia,100-200 UAH,Potential,1,2017-01-20
+125,TV,Standard,2016-11-06,Kyiv,<100 UAH,Potential,4,2000-07-16
+126,Internet,Business,1982-10-27,Dnipro,100-200 UAH,Inactive,2,2004-01-07
+127,Internet,Economy,2008-08-31,Vinnytsia,200-500 UAH,Potential,5,2017-12-07
+128,Internet,Business,2002-10-14,Zaporizhzhia,<100 UAH,Active,2,2011-10-01
+129,TV,Standard,1989-12-19,Lviv,200-500 UAH,Inactive,2,2014-02-24
+130,Fixed Line,Standard,2005-04-17,Vinnytsia,500+ UAH,Potential,4,2009-05-24
+131,Fixed Line,Business,1983-12-23,Kharkiv,<100 UAH,Potential,3,2009-07-17
+132,IoT,Standard,1984-12-16,Dnipro,500+ UAH,Inactive,2,2002-09-30
+133,TV,Standard,1990-01-04,Dnipro,200-500 UAH,Active,4,2003-09-29
+134,Internet,Standard,1991-03-04,Dnipro,<100 UAH,Active,3,2020-02-16
+135,Fixed Line,Special,1997-08-06,Kyiv,200-500 UAH,Inactive,4,2010-01-09
+136,TV,Special,1989-02-26,Vinnytsia,500+ UAH,Inactive,3,2010-05-07
+137,Internet,Premium,2012-09-29,Vinnytsia,<100 UAH,Inactive,4,2014-08-05
+138,IoT,Business,2001-08-17,Lviv,100-200 UAH,Inactive,2,2000-04-23
+139,Fixed Line,Economy,2015-08-31,Vinnytsia,200-500 UAH,Inactive,2,2011-09-01
+140,Fixed Line,Business,1988-04-20,Poltava,100-200 UAH,Potential,4,2019-05-23
+141,Mobile,Business,2019-03-15,Dnipro,<100 UAH,Active,2,2009-02-20
+142,Internet,Premium,2005-07-17,Lviv,<100 UAH,Inactive,4,2009-01-13
+143,Mobile,Special,2008-05-21,Lviv,100-200 UAH,Potential,4,2009-12-05
+144,IoT,Economy,1998-11-19,Kyiv,<100 UAH,Inactive,5,2018-09-23
+145,Mobile,Economy,2013-12-06,Dnipro,500+ UAH,Active,1,2013-05-12
+146,TV,Premium,1974-11-23,Poltava,<100 UAH,Active,2,2016-05-14
+147,Fixed Line,Standard,2008-12-18,Lviv,<100 UAH,Active,4,2015-09-24
+148,Mobile,Business,2002-08-01,Dnipro,500+ UAH,Active,1,2001-02-10
+149,Mobile,Business,2012-01-09,Dnipro,100-200 UAH,Potential,4,2021-05-23
+150,Internet,Economy,2013-12-06,Vinnytsia,200-500 UAH,Active,2,2015-06-20
+151,Internet,Business,1993-03-25,Zaporizhzhia,500+ UAH,Inactive,4,2012-09-15
+152,Mobile,Economy,2018-02-01,Odesa,200-500 UAH,Active,3,2000-12-27
+153,TV,Special,2010-09-03,Zaporizhzhia,500+ UAH,Potential,3,2020-02-09
+154,Mobile,Special,2013-06-04,Poltava,200-500 UAH,Active,5,2010-04-14
+155,TV,Economy,1970-08-24,Kharkiv,<100 UAH,Inactive,2,2019-12-16
+156,Mobile,Premium,2017-05-06,Dnipro,<100 UAH,Potential,2,2009-03-01
+157,IoT,Business,1982-09-22,Vinnytsia,100-200 UAH,Potential,1,2012-08-23
+158,IoT,Economy,2001-06-28,Kyiv,500+ UAH,Inactive,4,2019-07-29
+159,Mobile,Premium,1992-10-24,Vinnytsia,100-200 UAH,Active,2,2010-02-03
+160,Internet,Special,2000-07-27,Kharkiv,100-200 UAH,Active,2,2003-12-07
+161,TV,Business,1999-01-12,Kyiv,100-200 UAH,Active,1,2009-04-23
+162,IoT,Business,2008-07-16,Kyiv,<100 UAH,Active,3,2008-05-11
+163,TV,Special,1997-07-23,Kyiv,500+ UAH,Active,2,2016-01-03
+164,Fixed Line,Standard,1997-12-23,Odesa,500+ UAH,Active,1,2018-05-31
+165,Internet,Economy,1999-07-27,Kharkiv,500+ UAH,Active,3,2000-03-31
+166,Internet,Premium,1980-11-30,Kyiv,500+ UAH,Potential,2,2010-11-02
+167,Fixed Line,Premium,2004-02-25,Vinnytsia,100-200 UAH,Active,3,2005-11-08
+168,Internet,Standard,2019-02-13,Vinnytsia,500+ UAH,Active,2,2003-08-08
+169,IoT,Premium,2016-04-10,Odesa,100-200 UAH,Active,5,2014-07-31
+170,Fixed Line,Premium,1981-09-28,Kharkiv,100-200 UAH,Inactive,4,2018-04-20
+171,IoT,Business,2018-11-06,Vinnytsia,500+ UAH,Active,1,2011-12-04
+172,IoT,Economy,2011-06-25,Kyiv,500+ UAH,Potential,2,2004-03-30
+173,Fixed Line,Business,2018-04-20,Kyiv,500+ UAH,Active,4,2016-06-15
+174,TV,Special,2018-09-14,Dnipro,200-500 UAH,Potential,5,2011-06-02
+175,TV,Business,1993-04-09,Kharkiv,<100 UAH,Inactive,3,2017-08-16
+176,Internet,Standard,2001-04-24,Vinnytsia,100-200 UAH,Inactive,5,2021-02-16
+177,Fixed Line,Economy,1983-04-22,Poltava,500+ UAH,Potential,4,2009-03-08
+178,IoT,Standard,1980-06-04,Poltava,<100 UAH,Potential,1,2006-12-27
+179,TV,Economy,1992-05-28,Lviv,100-200 UAH,Inactive,4,2006-03-06
+180,TV,Economy,1982-07-10,Kyiv,500+ UAH,Potential,3,2015-02-18
+181,Internet,Economy,2012-08-08,Kyiv,200-500 UAH,Active,4,2021-04-15
+182,Internet,Premium,1972-12-02,Kyiv,200-500 UAH,Inactive,5,2006-04-05
+183,Internet,Business,1984-06-13,Dnipro,<100 UAH,Inactive,4,2010-02-15
+184,Internet,Premium,1978-11-17,Vinnytsia,500+ UAH,Potential,4,2012-08-15
+185,Fixed Line,Premium,1974-12-05,Dnipro,100-200 UAH,Active,4,2020-11-22
+186,Mobile,Business,1995-06-22,Dnipro,200-500 UAH,Active,4,2005-05-31
+187,TV,Standard,2012-09-17,Kharkiv,500+ UAH,Inactive,3,2021-01-23
+188,Internet,Economy,1991-10-09,Odesa,500+ UAH,Potential,4,2011-06-24
+189,IoT,Standard,1983-04-04,Kharkiv,500+ UAH,Active,1,2015-12-15
+190,TV,Standard,2014-01-29,Odesa,100-200 UAH,Active,3,2017-02-10
+191,Internet,Special,2016-01-10,Lviv,100-200 UAH,Potential,3,2003-08-09
+192,Internet,Premium,1995-04-10,Poltava,200-500 UAH,Potential,4,2021-05-07
+193,Fixed Line,Economy,2002-11-19,Kharkiv,200-500 UAH,Inactive,5,2021-05-18
+194,Mobile,Business,1973-01-27,Vinnytsia,200-500 UAH,Active,4,2018-12-21
+195,Mobile,Standard,1987-01-22,Zaporizhzhia,<100 UAH,Inactive,3,2018-06-21
+196,Fixed Line,Special,1989-06-20,Poltava,<100 UAH,Inactive,2,2007-02-23
+197,IoT,Special,1995-04-04,Poltava,<100 UAH,Potential,1,2018-08-30
+198,Mobile,Standard,2012-05-27,Vinnytsia,<100 UAH,Active,5,2019-06-16
+199,IoT,Standard,2010-06-14,Vinnytsia,200-500 UAH,Potential,5,2005-11-02
+200,TV,Special,1970-06-28,Vinnytsia,200-500 UAH,Potential,5,2003-09-27
+201,TV,Premium,1977-10-06,Kyiv,500+ UAH,Inactive,3,2016-07-30
+202,Mobile,Special,1988-11-05,Poltava,200-500 UAH,Active,5,2012-08-26
+203,Mobile,Special,1995-08-02,Lviv,100-200 UAH,Potential,5,2002-05-12
+204,TV,Special,2000-04-30,Zaporizhzhia,500+ UAH,Inactive,2,2008-10-01
+205,TV,Premium,1977-03-20,Kyiv,200-500 UAH,Active,2,2007-04-09
+206,Mobile,Premium,2004-10-16,Odesa,200-500 UAH,Potential,2,2014-06-21
+207,TV,Premium,2014-07-05,Poltava,200-500 UAH,Active,5,2009-03-17
+208,Mobile,Business,1981-03-06,Dnipro,200-500 UAH,Inactive,5,2014-03-17
+209,Fixed Line,Business,1996-12-22,Odesa,500+ UAH,Inactive,4,2017-07-05
+210,Internet,Business,2019-06-16,Kharkiv,200-500 UAH,Potential,3,2015-06-27
+211,Mobile,Business,2002-03-09,Vinnytsia,500+ UAH,Inactive,4,2013-07-11
+212,IoT,Economy,1974-08-29,Lviv,<100 UAH,Inactive,3,2019-11-08
+213,Mobile,Economy,2008-08-22,Vinnytsia,<100 UAH,Inactive,4,2005-06-05
+214,TV,Economy,1995-05-18,Lviv,500+ UAH,Active,2,2011-02-12
+215,IoT,Standard,1975-08-07,Lviv,200-500 UAH,Potential,5,2016-07-23
+216,IoT,Economy,1995-09-28,Zaporizhzhia,500+ UAH,Potential,2,2004-11-27
+217,Internet,Standard,2007-09-27,Odesa,500+ UAH,Inactive,4,2004-08-20
+218,Mobile,Special,1975-11-08,Kharkiv,100-200 UAH,Inactive,3,2014-12-27
+219,Fixed Line,Economy,1987-10-20,Dnipro,500+ UAH,Active,1,2017-02-05
+220,IoT,Premium,1974-02-12,Lviv,100-200 UAH,Potential,1,2019-05-31
+221,IoT,Business,1977-07-27,Dnipro,100-200 UAH,Active,5,2009-10-26
+222,Fixed Line,Standard,1972-08-16,Lviv,100-200 UAH,Potential,5,2015-09-09
+223,IoT,Special,1981-04-20,Lviv,500+ UAH,Potential,4,2003-09-29
+224,TV,Economy,1992-09-11,Odesa,200-500 UAH,Active,3,2006-11-23
+225,Fixed Line,Business,2009-07-18,Kyiv,100-200 UAH,Active,3,2013-11-04
+226,TV,Premium,2004-04-16,Lviv,500+ UAH,Inactive,2,2003-03-29
+227,Mobile,Special,1999-05-11,Poltava,<100 UAH,Potential,4,2020-12-06
+228,Mobile,Premium,2019-04-19,Kyiv,100-200 UAH,Inactive,2,2002-10-19
+229,Mobile,Economy,1993-03-03,Odesa,100-200 UAH,Potential,4,2017-01-05
+230,TV,Standard,2015-09-23,Lviv,100-200 UAH,Inactive,4,2006-12-23
+231,IoT,Special,1986-10-27,Zaporizhzhia,100-200 UAH,Inactive,5,2016-01-20
+232,IoT,Economy,1991-04-24,Vinnytsia,500+ UAH,Potential,5,2008-11-12
+233,Fixed Line,Economy,1989-11-07,Poltava,<100 UAH,Inactive,3,2016-05-17
+234,Fixed Line,Standard,1999-10-27,Kharkiv,100-200 UAH,Active,3,2019-09-20
+235,IoT,Standard,2016-07-28,Poltava,<100 UAH,Active,5,2013-01-21
+236,Internet,Economy,2008-05-12,Lviv,100-200 UAH,Inactive,1,2003-08-04
+237,TV,Standard,2011-09-02,Lviv,<100 UAH,Potential,3,2020-10-30
+238,TV,Special,2009-07-30,Zaporizhzhia,500+ UAH,Potential,2,2011-08-30
+239,TV,Standard,2017-07-25,Kharkiv,200-500 UAH,Potential,1,2005-03-30
+240,Internet,Special,1975-09-16,Poltava,<100 UAH,Inactive,2,2008-12-11
+241,Fixed Line,Economy,2010-09-10,Kharkiv,<100 UAH,Active,4,2015-10-17
+242,Fixed Line,Business,2003-08-04,Lviv,100-200 UAH,Inactive,4,2020-06-26
+243,TV,Economy,1971-08-21,Dnipro,<100 UAH,Active,4,2019-11-09
+244,Fixed Line,Economy,1989-12-05,Odesa,<100 UAH,Inactive,3,2003-01-27
+245,TV,Economy,1985-11-29,Vinnytsia,<100 UAH,Inactive,3,2019-02-04
+246,IoT,Special,1975-02-27,Zaporizhzhia,100-200 UAH,Potential,4,2012-12-04
+247,IoT,Business,1985-06-25,Poltava,200-500 UAH,Active,3,2008-12-21
+248,Fixed Line,Standard,1975-08-14,Dnipro,200-500 UAH,Inactive,3,2010-03-03
+249,Internet,Premium,1970-03-12,Vinnytsia,100-200 UAH,Active,2,2017-05-27
+250,Fixed Line,Special,2014-05-08,Lviv,200-500 UAH,Inactive,5,2018-07-03
+251,Mobile,Economy,1977-11-02,Zaporizhzhia,100-200 UAH,Active,4,2014-05-30
+252,TV,Economy,1994-05-18,Vinnytsia,100-200 UAH,Inactive,1,2001-04-12
+253,Mobile,Premium,1972-10-08,Kyiv,500+ UAH,Active,5,2017-09-15
+254,Fixed Line,Standard,2010-07-27,Kharkiv,<100 UAH,Potential,5,2000-07-24
+255,IoT,Business,2007-10-12,Zaporizhzhia,100-200 UAH,Active,2,2008-06-29
+256,TV,Economy,2010-12-17,Zaporizhzhia,200-500 UAH,Inactive,4,2009-09-23
+257,Fixed Line,Premium,2005-09-19,Vinnytsia,100-200 UAH,Active,1,2011-01-31
+258,Internet,Economy,2012-06-28,Vinnytsia,<100 UAH,Inactive,1,2005-08-09
+259,Fixed Line,Premium,1984-11-09,Kharkiv,500+ UAH,Potential,2,2009-03-06
+260,Internet,Standard,1983-08-16,Zaporizhzhia,<100 UAH,Potential,5,2017-03-30
+261,IoT,Premium,1972-02-09,Zaporizhzhia,200-500 UAH,Inactive,2,2005-12-10
+262,Internet,Economy,2018-07-17,Kyiv,500+ UAH,Active,1,2017-10-24
+263,Mobile,Special,1985-04-16,Odesa,200-500 UAH,Inactive,5,2000-04-10
+264,Mobile,Standard,1981-05-13,Vinnytsia,200-500 UAH,Active,5,2003-02-16
+265,Mobile,Premium,1973-05-30,Zaporizhzhia,<100 UAH,Active,2,2020-04-07
+266,Mobile,Special,1991-06-24,Odesa,100-200 UAH,Potential,4,2010-04-21
+267,Mobile,Business,2010-05-28,Lviv,100-200 UAH,Inactive,3,2001-02-10
+268,Internet,Business,1985-12-20,Lviv,500+ UAH,Active,5,2013-05-15
+269,Mobile,Premium,2008-12-28,Kharkiv,<100 UAH,Active,5,2009-12-27
+270,TV,Standard,2008-09-01,Kyiv,500+ UAH,Active,3,2001-12-09
+271,Internet,Economy,2016-10-17,Kyiv,100-200 UAH,Inactive,1,2007-08-15
+272,IoT,Business,1982-10-31,Dnipro,500+ UAH,Inactive,3,2013-06-16
+273,Internet,Special,1999-03-27,Poltava,100-200 UAH,Active,2,2013-09-30
+274,Fixed Line,Special,2016-06-10,Odesa,100-200 UAH,Active,5,2019-06-05
+275,IoT,Special,1981-09-25,Vinnytsia,<100 UAH,Active,5,2010-10-15
+276,Mobile,Business,1976-09-26,Odesa,500+ UAH,Potential,4,2002-04-17
+277,Mobile,Premium,1989-01-04,Lviv,100-200 UAH,Potential,1,2002-06-27
+278,Fixed Line,Business,2015-06-28,Lviv,200-500 UAH,Active,2,2009-02-16
+279,Mobile,Standard,2007-06-15,Zaporizhzhia,500+ UAH,Active,3,2004-01-22
+280,IoT,Standard,1971-11-15,Odesa,<100 UAH,Potential,1,2020-03-03
+281,IoT,Premium,2008-08-21,Dnipro,<100 UAH,Active,1,2004-08-23
+282,IoT,Special,1992-07-29,Zaporizhzhia,100-200 UAH,Inactive,2,2008-03-29
+283,Internet,Business,2003-04-18,Lviv,500+ UAH,Inactive,4,2011-03-23
+284,Internet,Premium,2005-07-02,Lviv,200-500 UAH,Potential,2,2007-03-28
+285,IoT,Economy,1997-08-18,Zaporizhzhia,<100 UAH,Active,2,2014-07-22
+286,Internet,Standard,2004-10-23,Vinnytsia,100-200 UAH,Inactive,4,2013-04-04
+287,Internet,Economy,2001-09-29,Dnipro,<100 UAH,Active,1,2020-07-28
+288,TV,Economy,2004-01-17,Vinnytsia,<100 UAH,Potential,1,2018-03-22
+289,Internet,Business,1975-03-12,Zaporizhzhia,<100 UAH,Active,3,2013-03-16
+290,TV,Premium,2007-11-06,Vinnytsia,200-500 UAH,Active,4,2009-10-13
+291,TV,Economy,1994-07-13,Kharkiv,200-500 UAH,Active,1,2013-06-19
+292,Internet,Economy,1979-06-08,Odesa,200-500 UAH,Inactive,1,2013-08-24
+293,Internet,Special,1985-07-26,Poltava,200-500 UAH,Inactive,4,2005-11-26
+294,Internet,Special,2001-01-02,Kyiv,200-500 UAH,Potential,5,2003-11-25
+295,Mobile,Economy,2018-03-01,Kyiv,200-500 UAH,Active,1,2011-05-15
+296,TV,Business,1979-05-26,Kyiv,500+ UAH,Active,4,2006-09-24
+297,Mobile,Economy,2014-09-26,Poltava,100-200 UAH,Potential,5,2008-06-08
+298,IoT,Standard,2002-04-26,Kyiv,200-500 UAH,Inactive,5,2000-01-14
+299,Internet,Premium,1994-11-10,Kyiv,200-500 UAH,Inactive,1,2014-12-06
+300,IoT,Business,1988-07-01,Poltava,500+ UAH,Inactive,3,2001-04-09
+301,Mobile,Special,1977-09-10,Kharkiv,500+ UAH,Active,2,2016-02-09
+302,TV,Premium,1976-01-11,Odesa,<100 UAH,Inactive,3,2004-07-21
+303,Fixed Line,Standard,1976-07-17,Zaporizhzhia,500+ UAH,Potential,3,2003-08-11
+304,Internet,Business,1981-05-26,Lviv,<100 UAH,Inactive,1,2013-02-25
+305,IoT,Business,2012-08-08,Zaporizhzhia,200-500 UAH,Active,4,2021-07-16
+306,IoT,Business,1982-04-01,Kyiv,200-500 UAH,Active,4,2009-03-30
+307,IoT,Special,1987-10-24,Zaporizhzhia,<100 UAH,Active,5,2019-01-15
+308,Mobile,Premium,2016-07-26,Dnipro,500+ UAH,Active,3,2001-05-09
+309,Mobile,Standard,1993-12-31,Poltava,<100 UAH,Inactive,2,2011-02-21
+310,Fixed Line,Economy,1999-08-02,Poltava,<100 UAH,Inactive,5,2014-12-07
+311,Mobile,Economy,2011-05-30,Kyiv,500+ UAH,Potential,2,2008-03-22
+312,TV,Economy,1977-02-20,Poltava,<100 UAH,Active,5,2002-11-01
+313,TV,Premium,1996-09-01,Kharkiv,<100 UAH,Inactive,4,2000-05-03
+314,IoT,Business,1974-12-09,Odesa,<100 UAH,Inactive,1,2008-06-20
+315,Internet,Standard,1997-02-13,Dnipro,<100 UAH,Active,2,2016-04-07
+316,IoT,Special,1999-09-13,Kyiv,100-200 UAH,Inactive,1,2021-09-11
+317,TV,Business,1997-04-15,Kharkiv,200-500 UAH,Inactive,5,2010-02-21
+318,TV,Special,1988-03-15,Kyiv,200-500 UAH,Active,5,2006-06-17
+319,TV,Business,2012-05-24,Kyiv,500+ UAH,Potential,1,2007-08-05
+320,IoT,Economy,1985-06-21,Dnipro,<100 UAH,Potential,4,2002-01-05
+321,Fixed Line,Business,2008-03-03,Kharkiv,200-500 UAH,Potential,2,2009-11-09
+322,Internet,Economy,1992-05-29,Odesa,<100 UAH,Potential,1,2013-09-26
+323,Fixed Line,Economy,2010-03-30,Kharkiv,100-200 UAH,Potential,5,2013-08-28
+324,Fixed Line,Standard,2009-07-20,Odesa,100-200 UAH,Inactive,2,2000-04-12
+325,Internet,Standard,2011-01-07,Zaporizhzhia,500+ UAH,Inactive,2,2013-11-17
+326,TV,Special,2004-07-09,Odesa,200-500 UAH,Inactive,3,2014-07-31
+327,TV,Special,2007-11-15,Poltava,500+ UAH,Potential,2,2010-12-30
+328,IoT,Premium,2008-12-17,Odesa,100-200 UAH,Inactive,4,2020-09-11
+329,IoT,Premium,2007-07-18,Odesa,<100 UAH,Potential,1,2005-08-26
+330,Fixed Line,Special,1989-08-04,Kharkiv,100-200 UAH,Inactive,4,2018-08-29
+331,Internet,Standard,1979-11-13,Zaporizhzhia,<100 UAH,Inactive,3,2003-10-25
+332,Internet,Economy,2018-06-22,Poltava,200-500 UAH,Active,4,2005-09-26
+333,Mobile,Premium,1982-10-22,Dnipro,<100 UAH,Inactive,2,2004-06-27
+334,Mobile,Standard,2018-12-26,Poltava,200-500 UAH,Potential,2,2019-05-23
+335,Fixed Line,Economy,1975-02-08,Odesa,200-500 UAH,Active,2,2017-05-19
+336,IoT,Premium,2011-04-28,Lviv,500+ UAH,Active,1,2009-11-12
+337,TV,Standard,1980-07-27,Odesa,<100 UAH,Inactive,5,2008-04-12
+338,TV,Special,2011-07-09,Zaporizhzhia,200-500 UAH,Potential,5,2000-04-13
+339,Fixed Line,Standard,1973-06-16,Lviv,200-500 UAH,Active,3,2015-05-17
+340,Internet,Premium,2013-04-22,Zaporizhzhia,100-200 UAH,Inactive,4,2021-02-18
+341,Mobile,Economy,1990-11-27,Kyiv,100-200 UAH,Inactive,5,2017-01-19
+342,IoT,Premium,2016-03-18,Odesa,500+ UAH,Active,1,2005-02-07
+343,Internet,Business,2002-02-03,Lviv,500+ UAH,Potential,2,2005-10-17
+344,IoT,Special,1995-10-20,Odesa,<100 UAH,Inactive,3,2009-04-05
+345,IoT,Business,1998-05-06,Kharkiv,<100 UAH,Inactive,2,2008-12-05
+346,Fixed Line,Premium,1996-10-21,Zaporizhzhia,200-500 UAH,Inactive,1,2005-02-01
+347,Mobile,Premium,1976-11-01,Dnipro,100-200 UAH,Potential,2,2017-05-03
+348,Mobile,Standard,2003-07-23,Kyiv,200-500 UAH,Potential,1,2017-03-20
+349,TV,Standard,1978-12-06,Dnipro,<100 UAH,Inactive,4,2015-06-22
+350,Internet,Business,2011-11-18,Dnipro,<100 UAH,Inactive,1,2000-02-09
+351,Internet,Standard,1973-02-22,Kharkiv,500+ UAH,Potential,4,2020-02-04
+352,Mobile,Standard,2017-09-08,Poltava,100-200 UAH,Inactive,4,2007-05-24
+353,IoT,Business,1977-06-11,Vinnytsia,200-500 UAH,Inactive,4,2000-08-18
+354,TV,Standard,1977-10-08,Lviv,100-200 UAH,Potential,2,2013-12-17
+355,TV,Business,1973-07-03,Kyiv,500+ UAH,Active,2,2016-02-26
+356,IoT,Economy,1977-06-27,Dnipro,<100 UAH,Active,2,2014-09-11
+357,TV,Business,1998-09-06,Odesa,500+ UAH,Inactive,3,2008-07-24
+358,IoT,Standard,1987-11-01,Vinnytsia,<100 UAH,Potential,3,2018-11-11
+359,TV,Special,2016-08-29,Lviv,100-200 UAH,Inactive,5,2007-10-23
+360,Mobile,Special,1988-04-21,Kyiv,500+ UAH,Inactive,3,2011-10-16
+361,TV,Business,2016-04-11,Dnipro,100-200 UAH,Inactive,2,2020-03-10
+362,TV,Special,1972-12-04,Vinnytsia,200-500 UAH,Active,3,2015-12-11
+363,Internet,Special,1980-12-27,Zaporizhzhia,100-200 UAH,Active,3,2002-01-27
+364,TV,Standard,2012-02-08,Dnipro,200-500 UAH,Inactive,3,2017-01-08
+365,IoT,Economy,1978-03-07,Lviv,<100 UAH,Potential,5,2019-10-01
+366,Mobile,Economy,1983-01-02,Poltava,100-200 UAH,Active,4,2018-01-29
+367,TV,Standard,1988-07-19,Odesa,100-200 UAH,Potential,2,2010-06-11
+368,Mobile,Economy,1999-03-11,Dnipro,200-500 UAH,Potential,2,2018-01-27
+369,Mobile,Business,1989-08-08,Kharkiv,500+ UAH,Potential,5,2001-08-28
+370,TV,Economy,1983-05-27,Kharkiv,200-500 UAH,Inactive,1,2005-07-26
+371,Internet,Special,1994-05-01,Poltava,200-500 UAH,Active,4,2018-12-26
+372,Fixed Line,Standard,1996-07-29,Vinnytsia,<100 UAH,Potential,5,2000-11-27
+373,TV,Premium,2018-02-01,Lviv,100-200 UAH,Inactive,2,2008-09-19
+374,Fixed Line,Special,2003-10-11,Poltava,500+ UAH,Inactive,3,2018-11-05
+375,TV,Special,1979-08-09,Poltava,500+ UAH,Inactive,5,2009-10-06
+376,Mobile,Business,2008-01-16,Kyiv,100-200 UAH,Potential,1,2001-11-07
+377,TV,Premium,2019-01-09,Lviv,500+ UAH,Potential,5,2010-01-20
+378,Fixed Line,Business,1977-07-13,Vinnytsia,200-500 UAH,Inactive,1,2016-01-14
+379,Mobile,Standard,1978-02-09,Zaporizhzhia,<100 UAH,Active,5,2006-12-06
+380,TV,Premium,1975-09-24,Lviv,100-200 UAH,Inactive,1,2019-11-09
+381,Internet,Standard,1984-07-12,Kyiv,<100 UAH,Potential,5,2020-08-09
+382,IoT,Economy,2004-10-10,Poltava,200-500 UAH,Active,1,2003-09-04
+383,TV,Special,1986-08-18,Kyiv,200-500 UAH,Active,1,2002-01-17
+384,Internet,Economy,1974-10-09,Kyiv,<100 UAH,Active,5,2006-07-22
+385,Fixed Line,Standard,2001-06-22,Odesa,500+ UAH,Inactive,2,2010-04-10
+386,Internet,Business,2008-09-24,Dnipro,500+ UAH,Active,5,2003-06-10
+387,IoT,Special,1990-03-29,Lviv,500+ UAH,Active,2,2005-04-16
+388,Internet,Special,2003-04-27,Poltava,<100 UAH,Potential,1,2020-06-10
+389,TV,Premium,1999-06-07,Zaporizhzhia,500+ UAH,Inactive,5,2015-08-29
+390,Internet,Economy,2002-02-28,Kharkiv,500+ UAH,Active,1,2013-02-04
+391,TV,Standard,1991-01-30,Kyiv,<100 UAH,Active,2,2015-07-04
+392,Fixed Line,Standard,1993-11-03,Kyiv,<100 UAH,Potential,5,2000-01-22
+393,IoT,Standard,2010-09-20,Kyiv,<100 UAH,Potential,5,2003-03-10
+394,Internet,Standard,1999-05-03,Zaporizhzhia,500+ UAH,Active,5,2015-02-25
+395,IoT,Business,1974-09-17,Dnipro,<100 UAH,Active,4,2015-08-29
+396,Internet,Standard,1971-06-29,Kharkiv,200-500 UAH,Active,2,2018-09-06
+397,IoT,Business,1995-07-19,Zaporizhzhia,500+ UAH,Active,1,2012-10-28
+398,Internet,Business,1997-03-20,Vinnytsia,<100 UAH,Inactive,1,2012-03-16
+399,Fixed Line,Premium,2010-10-13,Vinnytsia,<100 UAH,Active,5,2008-09-16
+400,Fixed Line,Premium,2006-07-01,Poltava,100-200 UAH,Inactive,3,2017-11-19
+401,TV,Economy,1981-04-06,Poltava,200-500 UAH,Inactive,3,2018-08-30
+402,Internet,Standard,2009-08-27,Lviv,200-500 UAH,Active,4,2009-11-21
+403,Fixed Line,Business,2001-06-08,Dnipro,500+ UAH,Active,1,2008-03-23
+404,Fixed Line,Premium,1981-08-28,Odesa,200-500 UAH,Potential,5,2001-02-07
+405,IoT,Standard,1995-10-11,Vinnytsia,500+ UAH,Inactive,4,2017-05-07
+406,Fixed Line,Premium,1981-12-29,Vinnytsia,<100 UAH,Inactive,5,2014-09-28
+407,Fixed Line,Premium,2006-01-23,Kharkiv,500+ UAH,Active,1,2009-08-14
+408,TV,Economy,1985-01-31,Kharkiv,<100 UAH,Active,3,2011-01-20
+409,Mobile,Business,1994-10-27,Poltava,<100 UAH,Active,2,2019-08-17
+410,IoT,Business,2014-11-18,Zaporizhzhia,<100 UAH,Active,2,2019-03-23
+411,Fixed Line,Premium,2019-05-03,Odesa,100-200 UAH,Potential,5,2003-12-03
+412,Mobile,Standard,2017-11-11,Lviv,<100 UAH,Active,4,2018-08-06
+413,Mobile,Business,2008-07-01,Kharkiv,<100 UAH,Potential,2,2011-03-01
+414,Fixed Line,Economy,1976-10-21,Kyiv,500+ UAH,Active,4,2002-04-28
+415,TV,Business,1993-05-20,Lviv,100-200 UAH,Active,1,2006-10-27
+416,Internet,Economy,2018-05-20,Vinnytsia,<100 UAH,Inactive,5,2015-01-17
+417,TV,Standard,1987-08-22,Vinnytsia,<100 UAH,Active,4,2019-07-27
+418,Fixed Line,Premium,1977-12-20,Dnipro,100-200 UAH,Inactive,5,2002-05-16
+419,IoT,Standard,1979-07-24,Zaporizhzhia,<100 UAH,Inactive,2,2013-05-09
+420,Internet,Standard,1997-06-13,Odesa,500+ UAH,Active,3,2014-11-08
+421,Internet,Economy,1971-02-01,Poltava,500+ UAH,Potential,1,2006-01-18
+422,Fixed Line,Standard,2008-06-27,Kyiv,<100 UAH,Inactive,2,2016-07-28
+423,Fixed Line,Premium,1989-08-13,Kyiv,500+ UAH,Active,5,2002-04-06
+424,IoT,Business,1981-02-28,Kyiv,<100 UAH,Potential,4,2005-04-01
+425,TV,Economy,1984-07-27,Dnipro,200-500 UAH,Inactive,5,2000-01-04
+426,IoT,Economy,2010-02-17,Poltava,<100 UAH,Inactive,4,2011-01-04
+427,Fixed Line,Standard,1971-11-10,Zaporizhzhia,<100 UAH,Inactive,5,2005-10-08
+428,IoT,Standard,2008-07-16,Kyiv,<100 UAH,Inactive,1,2001-09-16
+429,Fixed Line,Standard,2008-02-02,Kharkiv,200-500 UAH,Potential,3,2019-04-18
+430,Internet,Special,1974-01-28,Kyiv,100-200 UAH,Potential,4,2004-05-08
+431,IoT,Premium,2011-07-11,Poltava,100-200 UAH,Active,2,2012-06-04
+432,Mobile,Standard,1978-08-06,Zaporizhzhia,<100 UAH,Inactive,3,2005-12-11
+433,Internet,Special,1976-10-25,Zaporizhzhia,100-200 UAH,Inactive,1,2013-01-31
+434,Mobile,Economy,1978-04-25,Lviv,<100 UAH,Inactive,4,2014-05-01
+435,Fixed Line,Premium,1970-02-20,Kharkiv,200-500 UAH,Inactive,5,2015-11-22
+436,Mobile,Special,1996-08-27,Zaporizhzhia,100-200 UAH,Inactive,5,2006-06-23
+437,TV,Economy,1988-06-08,Kyiv,200-500 UAH,Inactive,3,2001-01-13
+438,Fixed Line,Business,1977-02-27,Zaporizhzhia,100-200 UAH,Potential,5,2018-10-11
+439,Mobile,Business,2013-05-29,Vinnytsia,200-500 UAH,Inactive,3,2021-03-25
+440,Fixed Line,Premium,1995-04-18,Zaporizhzhia,200-500 UAH,Potential,3,2019-05-30
+441,TV,Special,1987-06-04,Dnipro,500+ UAH,Active,2,2001-10-22
+442,Mobile,Special,1996-08-14,Zaporizhzhia,<100 UAH,Potential,2,2017-03-13
+443,Mobile,Economy,2010-06-08,Poltava,<100 UAH,Active,2,2010-08-24
+444,Internet,Business,1978-07-17,Kyiv,100-200 UAH,Active,5,2013-11-04
+445,Mobile,Business,2013-04-03,Dnipro,200-500 UAH,Potential,4,2013-05-25
+446,Mobile,Standard,1999-04-03,Kharkiv,500+ UAH,Potential,4,2011-09-20
+447,Fixed Line,Special,2000-10-03,Kharkiv,500+ UAH,Inactive,2,2014-10-14
+448,TV,Premium,1999-05-29,Zaporizhzhia,100-200 UAH,Inactive,2,2013-07-01
+449,IoT,Business,1981-01-22,Kharkiv,<100 UAH,Active,4,2012-08-19
+450,TV,Premium,1979-03-26,Kharkiv,500+ UAH,Active,2,2003-02-16
+451,TV,Premium,1993-11-07,Dnipro,200-500 UAH,Potential,3,2018-12-11
+452,Mobile,Standard,1987-10-22,Lviv,500+ UAH,Active,1,2016-07-02
+453,IoT,Business,1982-01-13,Dnipro,<100 UAH,Inactive,3,2021-02-13
+454,IoT,Premium,1999-01-17,Dnipro,100-200 UAH,Potential,4,2017-05-04
+455,TV,Business,2012-10-12,Kyiv,200-500 UAH,Inactive,2,2012-10-04
+456,Fixed Line,Standard,1997-10-29,Kyiv,<100 UAH,Potential,1,2020-02-02
+457,IoT,Economy,2015-04-19,Dnipro,500+ UAH,Active,2,2014-05-01
+458,IoT,Economy,2005-10-25,Odesa,200-500 UAH,Active,3,2006-10-17
+459,TV,Economy,2014-12-28,Lviv,200-500 UAH,Inactive,2,2003-11-05
+460,Internet,Premium,1980-01-30,Kharkiv,100-200 UAH,Active,3,2013-03-27
+461,IoT,Premium,1999-05-07,Kharkiv,500+ UAH,Potential,1,2016-02-15
+462,TV,Premium,1987-09-21,Poltava,500+ UAH,Inactive,5,2018-01-19
+463,Internet,Business,2007-02-28,Zaporizhzhia,<100 UAH,Inactive,5,2006-04-01
+464,TV,Special,1992-06-24,Kharkiv,500+ UAH,Active,1,2019-10-04
+465,TV,Business,1990-08-06,Kyiv,200-500 UAH,Active,2,2012-08-28
+466,Fixed Line,Economy,1977-02-22,Poltava,500+ UAH,Potential,5,2015-11-02
+467,Mobile,Special,1987-09-19,Kyiv,100-200 UAH,Active,3,2017-09-13
+468,Internet,Standard,2003-05-15,Lviv,500+ UAH,Inactive,5,2020-05-25
+469,Mobile,Special,1995-06-04,Vinnytsia,500+ UAH,Potential,3,2006-05-08
+470,Internet,Standard,1995-12-10,Lviv,<100 UAH,Inactive,1,2008-08-05
+471,Internet,Premium,2002-05-22,Dnipro,100-200 UAH,Inactive,5,2019-09-17
+472,IoT,Economy,1983-10-14,Poltava,<100 UAH,Inactive,1,2018-04-11
+473,Fixed Line,Premium,1981-01-11,Kyiv,500+ UAH,Active,4,2008-09-28
+474,Fixed Line,Business,2018-05-10,Zaporizhzhia,200-500 UAH,Potential,1,2010-03-27
+475,TV,Premium,1976-11-20,Zaporizhzhia,100-200 UAH,Potential,5,2015-09-16
+476,Mobile,Premium,1974-01-18,Kharkiv,<100 UAH,Active,3,2001-05-04
+477,TV,Special,2005-02-27,Zaporizhzhia,100-200 UAH,Active,1,2008-01-17
+478,Fixed Line,Standard,2002-05-03,Dnipro,200-500 UAH,Active,5,2004-07-07
+479,TV,Economy,1988-07-15,Odesa,200-500 UAH,Active,2,2011-05-13
+480,Fixed Line,Premium,1973-11-02,Odesa,<100 UAH,Inactive,3,2016-11-28
+481,Fixed Line,Premium,1983-12-20,Vinnytsia,<100 UAH,Inactive,2,2002-11-05
+482,Internet,Standard,1973-02-09,Zaporizhzhia,<100 UAH,Active,2,2021-08-11
+483,TV,Business,2019-06-04,Poltava,200-500 UAH,Inactive,4,2010-03-25
+484,Internet,Business,2004-09-30,Lviv,500+ UAH,Inactive,1,2016-12-06
+485,TV,Special,1991-08-01,Kyiv,100-200 UAH,Active,2,2007-09-20
+486,Fixed Line,Standard,2015-12-16,Kyiv,<100 UAH,Inactive,3,2010-09-10
+487,Fixed Line,Premium,1998-04-03,Odesa,500+ UAH,Active,2,2021-02-17
+488,IoT,Business,2005-07-16,Poltava,500+ UAH,Potential,4,2015-02-13
+489,Internet,Business,1995-04-28,Lviv,500+ UAH,Potential,5,2000-07-24
+490,Mobile,Economy,2011-04-19,Lviv,100-200 UAH,Active,3,2005-01-29
+491,TV,Economy,2019-02-02,Kyiv,200-500 UAH,Inactive,3,2005-09-05
+492,Mobile,Special,1990-08-05,Poltava,500+ UAH,Active,5,2021-01-01
+493,IoT,Business,1977-05-12,Vinnytsia,100-200 UAH,Potential,4,2016-11-08
+494,Fixed Line,Business,1990-01-29,Kyiv,<100 UAH,Potential,4,2014-11-12
+495,Internet,Standard,2009-11-10,Odesa,500+ UAH,Active,1,2001-07-11
+496,Mobile,Economy,1970-01-04,Vinnytsia,<100 UAH,Active,3,2017-08-09
+497,Internet,Economy,2017-09-12,Kharkiv,<100 UAH,Active,1,2003-12-24
+498,Fixed Line,Business,2003-02-07,Poltava,200-500 UAH,Inactive,2,2003-04-05
+499,Internet,Special,1985-07-10,Poltava,200-500 UAH,Active,1,2019-01-11
+500,Internet,Business,1994-06-23,Lviv,500+ UAH,Active,1,2000-02-10
+501,TV,Premium,1983-03-13,Kyiv,200-500 UAH,Inactive,5,2001-05-21
+502,Mobile,Economy,1991-10-13,Zaporizhzhia,100-200 UAH,Inactive,1,2020-02-20
+503,IoT,Economy,2001-11-21,Vinnytsia,500+ UAH,Potential,2,2005-07-05
+504,Internet,Standard,2003-09-06,Vinnytsia,500+ UAH,Potential,1,2016-12-16
+505,Internet,Special,1986-02-16,Lviv,<100 UAH,Active,4,2014-05-24
+506,IoT,Standard,1971-02-24,Vinnytsia,500+ UAH,Potential,1,2002-06-16
+507,Mobile,Economy,1988-11-05,Kharkiv,200-500 UAH,Potential,5,2017-05-30
+508,Fixed Line,Special,1988-10-03,Odesa,500+ UAH,Inactive,5,2004-07-17
+509,TV,Business,1990-08-03,Zaporizhzhia,200-500 UAH,Inactive,5,2015-03-26
+510,IoT,Business,2018-04-03,Kharkiv,<100 UAH,Inactive,1,2008-05-04
+511,Internet,Special,2018-06-22,Odesa,<100 UAH,Potential,2,2011-12-07
+512,Fixed Line,Premium,1977-06-07,Lviv,<100 UAH,Inactive,3,2020-09-21
+513,TV,Business,2015-08-23,Zaporizhzhia,100-200 UAH,Potential,5,2005-09-04
+514,IoT,Standard,2018-11-21,Dnipro,100-200 UAH,Inactive,1,2006-08-05
+515,Internet,Business,1982-10-28,Lviv,200-500 UAH,Potential,3,2006-05-29
+516,Mobile,Business,2007-01-10,Dnipro,100-200 UAH,Inactive,4,2008-02-08
+517,IoT,Premium,1978-10-08,Poltava,200-500 UAH,Potential,4,2012-08-17
+518,Internet,Business,1993-08-01,Vinnytsia,500+ UAH,Potential,5,2017-07-12
+519,Fixed Line,Standard,2000-05-04,Lviv,500+ UAH,Inactive,5,2019-07-24
+520,IoT,Standard,1978-12-22,Vinnytsia,<100 UAH,Inactive,4,2001-05-04
+521,TV,Standard,1997-05-05,Poltava,100-200 UAH,Inactive,5,2014-03-28
+522,Mobile,Economy,2006-12-01,Kharkiv,200-500 UAH,Active,4,2012-12-22
+523,IoT,Business,2003-05-08,Odesa,200-500 UAH,Active,1,2013-02-28
+524,IoT,Business,2001-07-08,Lviv,100-200 UAH,Inactive,3,2017-05-17
+525,Mobile,Special,1976-01-07,Poltava,200-500 UAH,Inactive,1,2020-07-16
+526,Fixed Line,Premium,2017-10-15,Vinnytsia,<100 UAH,Active,4,2016-05-22
+527,TV,Economy,1977-01-15,Poltava,200-500 UAH,Inactive,1,2003-10-04
+528,Internet,Business,2000-08-04,Kyiv,<100 UAH,Inactive,4,2020-11-28
+529,Fixed Line,Standard,1976-06-21,Odesa,500+ UAH,Active,1,2018-12-13
+530,Internet,Economy,1996-12-19,Kharkiv,500+ UAH,Potential,3,2006-07-25
+531,TV,Economy,2013-05-05,Lviv,100-200 UAH,Active,4,2002-09-05
+532,Fixed Line,Standard,2001-06-29,Poltava,500+ UAH,Inactive,5,2017-08-26
+533,IoT,Special,2015-05-26,Vinnytsia,100-200 UAH,Inactive,5,2021-05-20
+534,Fixed Line,Business,2002-11-27,Odesa,200-500 UAH,Potential,5,2002-10-16
+535,Internet,Premium,1992-10-03,Kyiv,100-200 UAH,Inactive,4,2014-04-07
+536,IoT,Special,1993-04-30,Odesa,100-200 UAH,Inactive,5,2000-03-19
+537,Mobile,Premium,1980-07-29,Lviv,500+ UAH,Active,2,2000-10-10
+538,Fixed Line,Premium,2017-08-29,Kyiv,<100 UAH,Active,3,2017-03-13
+539,Fixed Line,Business,1985-07-15,Poltava,<100 UAH,Inactive,2,2017-11-11
+540,IoT,Economy,1989-12-26,Lviv,100-200 UAH,Inactive,4,2007-08-26
+541,Fixed Line,Standard,1971-06-28,Dnipro,100-200 UAH,Inactive,4,2009-10-23
+542,IoT,Premium,1989-05-22,Odesa,500+ UAH,Inactive,3,2017-01-26
+543,Mobile,Special,1975-10-31,Vinnytsia,500+ UAH,Potential,1,2018-10-14
+544,Fixed Line,Business,1979-07-26,Poltava,200-500 UAH,Active,3,2006-01-17
+545,Internet,Business,2009-06-14,Kyiv,<100 UAH,Active,2,2017-03-06
+546,Fixed Line,Special,1993-08-05,Poltava,500+ UAH,Inactive,2,2004-05-26
+547,IoT,Premium,2011-11-10,Poltava,100-200 UAH,Inactive,2,2009-10-18
+548,IoT,Premium,1986-02-17,Poltava,500+ UAH,Inactive,2,2015-09-30
+549,Internet,Premium,1989-02-23,Lviv,200-500 UAH,Active,1,2015-01-08
+550,Internet,Special,2011-07-31,Zaporizhzhia,500+ UAH,Inactive,4,2011-01-01
+551,IoT,Premium,1973-05-19,Dnipro,500+ UAH,Inactive,4,2014-09-02
+552,IoT,Special,2010-12-29,Lviv,<100 UAH,Potential,3,2001-02-08
+553,Fixed Line,Business,1980-04-06,Lviv,200-500 UAH,Active,4,2006-04-25
+554,IoT,Special,2002-09-22,Odesa,500+ UAH,Potential,4,2004-09-26
+555,Internet,Standard,1996-08-16,Odesa,100-200 UAH,Inactive,4,2001-10-16
+556,Fixed Line,Economy,2009-06-09,Poltava,100-200 UAH,Potential,1,2004-07-19
+557,IoT,Economy,2008-04-19,Dnipro,100-200 UAH,Potential,1,2018-11-02
+558,Mobile,Standard,1998-10-02,Vinnytsia,<100 UAH,Active,4,2019-08-19
+559,Internet,Special,1999-01-06,Odesa,<100 UAH,Potential,2,2011-09-04
+560,Mobile,Economy,2006-09-11,Kyiv,100-200 UAH,Inactive,4,2010-08-11
+561,Fixed Line,Standard,2000-07-04,Vinnytsia,200-500 UAH,Inactive,3,2010-02-22
+562,Internet,Premium,1997-12-06,Dnipro,100-200 UAH,Inactive,5,2021-01-02
+563,Fixed Line,Standard,1994-11-13,Odesa,100-200 UAH,Inactive,3,2020-08-09
+564,TV,Economy,2017-11-04,Vinnytsia,500+ UAH,Active,5,2004-09-27
+565,Internet,Special,1981-01-20,Kharkiv,<100 UAH,Inactive,1,2002-01-29
+566,Fixed Line,Special,1991-11-03,Kyiv,200-500 UAH,Active,1,2001-03-11
+567,Mobile,Special,1990-12-04,Zaporizhzhia,200-500 UAH,Active,4,2007-11-01
+568,Fixed Line,Economy,1999-04-23,Lviv,<100 UAH,Active,5,2009-02-22
+569,IoT,Premium,2004-03-02,Kyiv,200-500 UAH,Inactive,1,2005-06-04
+570,IoT,Special,1981-02-17,Kyiv,500+ UAH,Active,1,2020-02-26
+571,Mobile,Business,1998-01-27,Vinnytsia,200-500 UAH,Potential,4,2018-05-03
+572,Fixed Line,Premium,2015-12-28,Poltava,500+ UAH,Potential,1,2016-04-21
+573,Internet,Standard,1981-09-16,Kyiv,100-200 UAH,Inactive,5,2010-08-07
+574,Mobile,Business,1975-07-16,Kharkiv,200-500 UAH,Potential,3,2019-06-01
+575,Fixed Line,Premium,1983-12-14,Kyiv,<100 UAH,Potential,1,2020-09-13
+576,TV,Economy,1997-08-14,Kharkiv,500+ UAH,Potential,2,2019-06-11
+577,IoT,Business,1992-08-10,Kharkiv,500+ UAH,Potential,1,2005-09-21
+578,Mobile,Premium,1992-01-03,Odesa,100-200 UAH,Active,3,2018-12-05
+579,Fixed Line,Premium,2002-09-09,Poltava,100-200 UAH,Potential,4,2007-09-03
+580,TV,Premium,2015-10-17,Kharkiv,<100 UAH,Inactive,4,2002-09-13
+581,IoT,Premium,1979-04-15,Kharkiv,200-500 UAH,Inactive,3,2016-04-14
+582,TV,Special,1987-06-02,Vinnytsia,100-200 UAH,Potential,4,2017-09-19
+583,Mobile,Business,1989-03-31,Vinnytsia,500+ UAH,Potential,1,2021-08-12
+584,Fixed Line,Premium,1977-08-31,Zaporizhzhia,500+ UAH,Potential,5,2010-07-14
+585,TV,Standard,2014-06-30,Zaporizhzhia,500+ UAH,Potential,1,2005-07-01
+586,TV,Premium,2016-08-04,Poltava,500+ UAH,Potential,5,2001-06-07
+587,TV,Special,2019-12-05,Dnipro,500+ UAH,Active,2,2009-01-18
+588,Internet,Business,1981-11-08,Kharkiv,200-500 UAH,Inactive,3,2012-08-24
+589,TV,Business,1973-08-02,Vinnytsia,500+ UAH,Inactive,3,2010-11-15
+590,Fixed Line,Premium,1977-05-31,Poltava,200-500 UAH,Active,1,2003-07-26
+591,Fixed Line,Premium,2011-01-06,Kyiv,200-500 UAH,Active,4,2008-02-20
+592,Fixed Line,Standard,2016-06-14,Lviv,500+ UAH,Active,3,2020-02-08
+593,IoT,Business,1987-10-14,Zaporizhzhia,<100 UAH,Inactive,5,2010-01-22
+594,TV,Business,2018-02-03,Kharkiv,500+ UAH,Inactive,4,2011-03-21
+595,Mobile,Business,2009-10-27,Kharkiv,200-500 UAH,Potential,5,2010-05-03
+596,IoT,Economy,1987-08-31,Odesa,500+ UAH,Active,3,2008-06-04
+597,Internet,Business,2012-07-08,Vinnytsia,100-200 UAH,Inactive,5,2001-04-30
+598,Fixed Line,Business,2002-01-11,Odesa,100-200 UAH,Inactive,2,2005-01-07
+599,Internet,Standard,1992-04-23,Kyiv,<100 UAH,Potential,5,2010-12-13
+600,IoT,Standard,1992-07-31,Dnipro,500+ UAH,Potential,1,2012-10-19
+601,Internet,Special,2018-01-27,Vinnytsia,100-200 UAH,Inactive,2,2010-06-22
+602,IoT,Standard,1984-08-22,Kharkiv,200-500 UAH,Active,1,2007-12-21
+603,Internet,Business,2003-06-18,Zaporizhzhia,100-200 UAH,Potential,5,2017-08-06
+604,Fixed Line,Business,2010-03-08,Lviv,<100 UAH,Inactive,4,2015-03-21
+605,TV,Business,1989-04-04,Kharkiv,200-500 UAH,Potential,1,2020-09-15
+606,Fixed Line,Standard,1993-03-14,Vinnytsia,200-500 UAH,Active,4,2000-08-09
+607,Fixed Line,Premium,2002-02-03,Poltava,<100 UAH,Inactive,2,2016-04-18
+608,Fixed Line,Economy,1999-05-16,Poltava,100-200 UAH,Active,5,2001-05-06
+609,TV,Special,2006-08-21,Dnipro,200-500 UAH,Potential,4,2006-05-16
+610,Fixed Line,Premium,2012-10-02,Vinnytsia,100-200 UAH,Active,1,2020-02-01
+611,IoT,Economy,1997-01-25,Dnipro,200-500 UAH,Active,3,2016-12-24
+612,Internet,Standard,2017-12-09,Vinnytsia,<100 UAH,Potential,2,2014-07-02
+613,TV,Special,1984-01-18,Lviv,500+ UAH,Active,2,2008-10-02
+614,Mobile,Special,1973-05-03,Zaporizhzhia,100-200 UAH,Inactive,4,2001-02-02
+615,IoT,Standard,1989-03-16,Kyiv,<100 UAH,Potential,2,2005-09-13
+616,TV,Premium,2018-03-04,Poltava,500+ UAH,Active,5,2010-07-13
+617,Internet,Economy,2008-03-03,Kharkiv,500+ UAH,Active,2,2009-04-05
+618,TV,Business,1979-11-03,Kharkiv,500+ UAH,Potential,5,2010-01-13
+619,IoT,Business,2018-12-14,Odesa,<100 UAH,Active,2,2000-08-30
+620,IoT,Economy,2005-02-05,Poltava,200-500 UAH,Inactive,5,2013-11-12
+621,Mobile,Business,2009-12-08,Kyiv,<100 UAH,Potential,1,2009-11-16
+622,Fixed Line,Premium,1972-09-10,Lviv,100-200 UAH,Inactive,1,2000-05-14
+623,Internet,Standard,2006-02-09,Kharkiv,500+ UAH,Inactive,2,2020-07-27
+624,IoT,Business,1994-03-02,Vinnytsia,200-500 UAH,Inactive,2,2004-04-30
+625,IoT,Standard,2009-09-20,Vinnytsia,200-500 UAH,Potential,2,2003-09-18
+626,Internet,Business,2005-10-12,Vinnytsia,<100 UAH,Potential,5,2016-07-15
+627,IoT,Business,1978-10-25,Zaporizhzhia,200-500 UAH,Inactive,3,2007-08-21
+628,Mobile,Special,2015-11-27,Dnipro,<100 UAH,Potential,2,2013-05-24
+629,Mobile,Business,1998-11-13,Kyiv,200-500 UAH,Inactive,2,2000-02-17
+630,Fixed Line,Special,1989-04-10,Zaporizhzhia,500+ UAH,Inactive,4,2009-06-13
+631,TV,Economy,1981-05-18,Dnipro,100-200 UAH,Active,2,2000-07-17
+632,Internet,Business,2009-02-24,Vinnytsia,<100 UAH,Inactive,3,2004-08-03
+633,Mobile,Business,2018-07-03,Dnipro,100-200 UAH,Potential,1,2004-04-06
+634,Mobile,Business,2006-10-02,Kharkiv,100-200 UAH,Inactive,4,2021-04-07
+635,Mobile,Special,2000-06-22,Zaporizhzhia,100-200 UAH,Inactive,4,2006-08-16
+636,Mobile,Business,2017-06-26,Zaporizhzhia,200-500 UAH,Active,4,2018-05-20
+637,Fixed Line,Premium,2005-07-22,Lviv,500+ UAH,Inactive,1,2009-03-20
+638,IoT,Economy,1992-10-22,Lviv,500+ UAH,Inactive,5,2018-11-19
+639,Mobile,Standard,1986-01-27,Lviv,100-200 UAH,Active,5,2014-07-08
+640,Fixed Line,Standard,1979-06-06,Kharkiv,100-200 UAH,Active,1,2000-02-26
+641,TV,Special,2013-08-27,Poltava,500+ UAH,Potential,4,2002-06-11
+642,IoT,Economy,2006-02-13,Zaporizhzhia,200-500 UAH,Inactive,3,2000-09-07
+643,TV,Economy,2018-11-14,Vinnytsia,200-500 UAH,Inactive,1,2001-12-24
+644,IoT,Standard,1973-10-04,Odesa,<100 UAH,Active,4,2004-10-28
+645,IoT,Special,1985-09-22,Lviv,500+ UAH,Potential,4,2017-03-16
+646,IoT,Premium,1990-04-23,Dnipro,500+ UAH,Inactive,2,2016-01-26
+647,Fixed Line,Economy,2018-02-04,Zaporizhzhia,500+ UAH,Inactive,1,2005-05-11
+648,Internet,Standard,1999-07-09,Dnipro,200-500 UAH,Active,5,2008-07-20
+649,TV,Premium,2003-12-25,Vinnytsia,200-500 UAH,Active,4,2018-10-28
+650,IoT,Premium,1983-07-15,Odesa,<100 UAH,Active,5,2001-08-01
+651,IoT,Premium,1982-11-13,Kyiv,500+ UAH,Inactive,5,2012-05-15
+652,Mobile,Business,1987-02-16,Kharkiv,<100 UAH,Inactive,2,2002-07-09
+653,Mobile,Premium,1974-03-13,Kharkiv,500+ UAH,Potential,2,2021-10-09
+654,Fixed Line,Premium,2016-12-11,Dnipro,500+ UAH,Active,1,2009-09-03
+655,IoT,Standard,1990-03-31,Poltava,500+ UAH,Active,1,2020-01-18
+656,TV,Special,1980-01-08,Lviv,<100 UAH,Active,4,2003-05-08
+657,TV,Business,1987-03-07,Lviv,100-200 UAH,Inactive,3,2021-09-09
+658,Mobile,Standard,1979-10-14,Zaporizhzhia,200-500 UAH,Potential,4,2001-04-19
+659,Mobile,Standard,1982-10-14,Odesa,200-500 UAH,Potential,5,2001-04-16
+660,Internet,Premium,2007-11-09,Poltava,<100 UAH,Active,1,2018-01-11
+661,IoT,Business,1981-11-22,Kyiv,<100 UAH,Inactive,1,2017-01-03
+662,IoT,Special,2004-12-01,Lviv,200-500 UAH,Active,1,2005-06-06
+663,Mobile,Special,1999-08-25,Lviv,500+ UAH,Active,1,2005-05-28
+664,Mobile,Standard,1977-04-01,Poltava,<100 UAH,Potential,3,2010-05-09
+665,Mobile,Business,2008-02-28,Dnipro,500+ UAH,Potential,4,2020-08-31
+666,Internet,Standard,2012-08-12,Vinnytsia,200-500 UAH,Inactive,1,2013-09-16
+667,Internet,Standard,2017-10-07,Poltava,200-500 UAH,Active,3,2018-03-27
+668,Internet,Special,2017-12-01,Lviv,200-500 UAH,Active,2,2018-12-28
+669,IoT,Special,2005-04-18,Kharkiv,500+ UAH,Inactive,3,2002-12-11
+670,Internet,Standard,1984-07-23,Lviv,<100 UAH,Active,1,2012-09-04
+671,IoT,Special,1971-11-23,Lviv,200-500 UAH,Inactive,1,2021-08-13
+672,Mobile,Special,1989-07-01,Kyiv,500+ UAH,Inactive,3,2002-02-04
+673,IoT,Premium,2006-08-19,Kharkiv,500+ UAH,Inactive,1,2009-09-18
+674,TV,Premium,2016-12-31,Odesa,100-200 UAH,Potential,1,2016-10-01
+675,Fixed Line,Economy,1975-09-04,Kharkiv,200-500 UAH,Active,3,2021-09-03
+676,Mobile,Economy,1997-02-03,Poltava,<100 UAH,Potential,4,2002-08-15
+677,TV,Standard,1993-09-21,Odesa,200-500 UAH,Potential,5,2008-11-09
+678,Fixed Line,Standard,1972-04-14,Kyiv,100-200 UAH,Inactive,4,2016-06-28
+679,TV,Standard,2002-07-06,Kyiv,200-500 UAH,Inactive,3,2013-01-04
+680,Fixed Line,Standard,2013-08-07,Vinnytsia,100-200 UAH,Active,1,2019-03-31
+681,Fixed Line,Special,1993-01-28,Vinnytsia,100-200 UAH,Inactive,4,2002-03-28
+682,Internet,Economy,1996-02-23,Dnipro,200-500 UAH,Active,3,2011-11-19
+683,TV,Standard,1978-11-19,Kyiv,<100 UAH,Active,3,2013-05-05
+684,TV,Premium,1976-01-20,Lviv,200-500 UAH,Active,2,2017-11-01
+685,Mobile,Special,2000-09-02,Poltava,500+ UAH,Active,1,2018-07-09
+686,IoT,Economy,2005-10-18,Zaporizhzhia,500+ UAH,Active,2,2010-05-21
+687,TV,Special,1984-05-13,Kharkiv,100-200 UAH,Inactive,5,2013-03-27
+688,TV,Business,1994-12-15,Odesa,500+ UAH,Potential,3,2000-03-03
+689,Mobile,Standard,2017-11-14,Kharkiv,200-500 UAH,Active,3,2015-02-03
+690,Mobile,Premium,1971-09-01,Kharkiv,500+ UAH,Potential,1,2000-05-03
+691,Internet,Economy,1981-10-13,Kharkiv,200-500 UAH,Active,2,2014-03-04
+692,IoT,Special,1975-02-24,Kharkiv,500+ UAH,Potential,2,2011-01-30
+693,IoT,Economy,2011-01-27,Kharkiv,<100 UAH,Potential,1,2020-11-23
+694,Internet,Business,2019-07-31,Poltava,500+ UAH,Active,2,2003-07-28
+695,Mobile,Premium,1977-12-25,Vinnytsia,100-200 UAH,Inactive,1,2008-05-28
+696,Mobile,Special,2007-07-28,Zaporizhzhia,<100 UAH,Inactive,2,2018-10-11
+697,Mobile,Business,1984-05-11,Kyiv,<100 UAH,Inactive,1,2011-04-05
+698,TV,Premium,1986-06-05,Vinnytsia,200-500 UAH,Inactive,5,2017-11-03
+699,IoT,Standard,2016-06-17,Kharkiv,200-500 UAH,Potential,1,2011-02-11
+700,IoT,Economy,2005-08-08,Kharkiv,100-200 UAH,Active,1,2014-12-12
+701,Fixed Line,Business,2010-07-30,Odesa,100-200 UAH,Active,2,2019-04-23
+702,Fixed Line,Economy,1992-09-21,Kharkiv,100-200 UAH,Inactive,2,2001-03-14
+703,TV,Economy,1986-05-09,Poltava,100-200 UAH,Active,1,2019-04-17
+704,TV,Business,1976-11-29,Zaporizhzhia,<100 UAH,Active,1,2003-12-02
+705,IoT,Business,2001-04-01,Poltava,100-200 UAH,Active,2,2016-07-17
+706,Fixed Line,Special,2003-12-20,Kharkiv,500+ UAH,Potential,3,2012-05-23
+707,Internet,Premium,2016-06-27,Vinnytsia,500+ UAH,Active,4,2007-04-17
+708,Mobile,Standard,1976-04-03,Poltava,500+ UAH,Active,5,2020-12-29
+709,IoT,Premium,2006-10-30,Kharkiv,100-200 UAH,Inactive,1,2018-06-06
+710,Internet,Standard,1997-04-23,Poltava,500+ UAH,Potential,2,2006-04-03
+711,TV,Standard,1992-11-07,Lviv,200-500 UAH,Potential,4,2004-06-09
+712,Mobile,Special,2007-08-15,Vinnytsia,<100 UAH,Active,1,2007-11-11
+713,TV,Premium,2000-05-05,Lviv,100-200 UAH,Active,2,2007-04-10
+714,Fixed Line,Business,1975-02-19,Lviv,<100 UAH,Potential,2,2003-07-02
+715,Internet,Economy,1990-12-11,Kharkiv,200-500 UAH,Active,3,2020-07-13
+716,Mobile,Special,2019-10-01,Kyiv,<100 UAH,Active,1,2019-06-10
+717,Mobile,Special,2008-05-08,Lviv,<100 UAH,Inactive,4,2019-02-28
+718,TV,Special,2008-02-08,Dnipro,100-200 UAH,Potential,5,2009-12-24
+719,IoT,Business,2016-01-30,Lviv,<100 UAH,Inactive,3,2017-04-17
+720,Internet,Economy,2006-06-12,Odesa,100-200 UAH,Inactive,5,2007-11-22
+721,Mobile,Standard,2012-05-15,Kyiv,200-500 UAH,Inactive,1,2018-11-06
+722,Mobile,Business,1990-01-15,Zaporizhzhia,500+ UAH,Potential,4,2019-11-08
+723,Fixed Line,Premium,1989-12-29,Poltava,100-200 UAH,Active,4,2011-10-16
+724,Internet,Premium,2017-10-26,Vinnytsia,200-500 UAH,Inactive,4,2010-06-06
+725,Internet,Business,2007-11-07,Odesa,200-500 UAH,Active,2,2011-09-01
+726,Mobile,Special,1993-07-20,Odesa,100-200 UAH,Inactive,4,2005-03-19
+727,Internet,Business,1994-06-19,Lviv,100-200 UAH,Active,2,2002-01-04
+728,Internet,Economy,1970-10-30,Odesa,<100 UAH,Inactive,4,2008-06-22
+729,Mobile,Standard,1981-06-24,Odesa,100-200 UAH,Active,5,2017-03-04
+730,Mobile,Standard,1993-07-20,Kyiv,500+ UAH,Active,5,2014-12-07
+731,TV,Standard,1984-09-05,Lviv,500+ UAH,Inactive,4,2018-06-01
+732,TV,Standard,2019-01-22,Kyiv,500+ UAH,Active,4,2009-11-20
+733,TV,Special,1975-10-10,Kharkiv,200-500 UAH,Inactive,2,2002-09-21
+734,TV,Premium,1995-04-06,Lviv,500+ UAH,Inactive,2,2011-06-13
+735,Internet,Premium,1970-06-30,Odesa,500+ UAH,Potential,2,2000-11-11
+736,Fixed Line,Business,1983-08-14,Vinnytsia,<100 UAH,Inactive,1,2009-06-08
+737,Mobile,Standard,1981-03-19,Lviv,100-200 UAH,Active,2,2004-05-30
+738,Mobile,Premium,2000-03-26,Vinnytsia,<100 UAH,Active,2,2018-06-28
+739,IoT,Economy,2014-05-01,Lviv,<100 UAH,Potential,1,2002-10-28
+740,Fixed Line,Business,1998-04-21,Zaporizhzhia,200-500 UAH,Potential,4,2010-05-25
+741,Fixed Line,Special,2002-03-08,Kharkiv,200-500 UAH,Inactive,3,2008-06-08
+742,Mobile,Premium,1983-12-27,Zaporizhzhia,200-500 UAH,Active,1,2018-07-08
+743,Fixed Line,Standard,1985-06-07,Poltava,100-200 UAH,Potential,2,2012-04-19
+744,IoT,Special,1994-12-07,Kyiv,200-500 UAH,Active,1,2010-05-27
+745,Internet,Economy,1998-05-30,Lviv,500+ UAH,Potential,5,2013-01-21
+746,TV,Economy,1997-04-19,Zaporizhzhia,<100 UAH,Active,5,2005-01-31
+747,IoT,Economy,1982-12-29,Vinnytsia,200-500 UAH,Active,4,2011-06-03
+748,TV,Special,1977-04-18,Lviv,<100 UAH,Potential,2,2007-09-01
+749,Mobile,Premium,1988-05-28,Vinnytsia,200-500 UAH,Active,5,2002-05-21
+750,Internet,Premium,2009-03-07,Zaporizhzhia,500+ UAH,Inactive,1,2017-05-02
+751,IoT,Standard,1999-10-15,Dnipro,<100 UAH,Inactive,2,2007-11-26
+752,Fixed Line,Special,1979-02-02,Lviv,100-200 UAH,Active,4,2006-02-09
+753,Internet,Premium,1981-08-27,Kyiv,<100 UAH,Inactive,2,2000-01-05
+754,IoT,Business,2015-03-07,Dnipro,<100 UAH,Active,2,2000-10-31
+755,Internet,Standard,1989-10-18,Vinnytsia,500+ UAH,Inactive,1,2005-07-07
+756,Mobile,Premium,2012-08-28,Odesa,100-200 UAH,Potential,2,2007-03-21
+757,Fixed Line,Business,2018-11-03,Poltava,100-200 UAH,Active,1,2015-04-25
+758,TV,Standard,1987-11-19,Odesa,200-500 UAH,Active,1,2008-01-26
+759,TV,Economy,1970-08-24,Lviv,200-500 UAH,Inactive,2,2017-06-12
+760,TV,Economy,2006-05-14,Kyiv,100-200 UAH,Potential,4,2012-11-10
+761,IoT,Business,1994-04-04,Lviv,100-200 UAH,Active,4,2007-09-05
+762,Internet,Economy,2014-05-05,Odesa,100-200 UAH,Potential,3,2003-06-13
+763,Fixed Line,Business,1978-06-16,Lviv,200-500 UAH,Active,5,2000-01-11
+764,Fixed Line,Standard,1982-02-26,Lviv,200-500 UAH,Inactive,2,2008-05-22
+765,IoT,Premium,1993-07-26,Poltava,500+ UAH,Inactive,2,2008-11-27
+766,Fixed Line,Standard,1976-10-13,Odesa,100-200 UAH,Potential,1,2007-12-21
+767,Fixed Line,Business,1988-01-03,Poltava,500+ UAH,Inactive,4,2017-07-29
+768,Internet,Special,1970-10-12,Zaporizhzhia,100-200 UAH,Potential,2,2002-02-03
+769,Internet,Special,2010-01-23,Odesa,500+ UAH,Inactive,4,2002-07-08
+770,Internet,Business,1975-01-12,Zaporizhzhia,<100 UAH,Potential,3,2005-02-10
+771,IoT,Economy,1999-10-10,Dnipro,100-200 UAH,Inactive,2,2011-04-02
+772,IoT,Business,1983-02-07,Poltava,500+ UAH,Potential,1,2015-11-25
+773,IoT,Premium,1971-07-02,Dnipro,200-500 UAH,Inactive,4,2019-10-17
+774,Fixed Line,Standard,1975-06-25,Kyiv,200-500 UAH,Potential,5,2005-11-06
+775,TV,Business,2004-12-08,Vinnytsia,500+ UAH,Active,4,2002-10-19
+776,Fixed Line,Premium,2014-07-10,Zaporizhzhia,100-200 UAH,Potential,4,2011-02-25
+777,Internet,Special,1972-09-24,Zaporizhzhia,200-500 UAH,Inactive,5,2006-07-24
+778,TV,Business,1984-01-24,Vinnytsia,500+ UAH,Inactive,4,2021-07-24
+779,Mobile,Economy,1989-11-28,Kyiv,500+ UAH,Active,3,2000-11-14
+780,TV,Business,2018-11-25,Odesa,100-200 UAH,Inactive,2,2004-03-07
+781,Internet,Special,1992-02-13,Zaporizhzhia,<100 UAH,Active,2,2016-07-03
+782,Internet,Premium,2011-03-20,Poltava,200-500 UAH,Potential,2,2008-06-18
+783,Internet,Business,1984-01-18,Kyiv,500+ UAH,Inactive,4,2012-04-24
+784,Internet,Business,1993-05-24,Poltava,200-500 UAH,Active,5,2017-11-10
+785,Mobile,Economy,2011-04-07,Kyiv,500+ UAH,Active,4,2014-08-09
+786,TV,Business,2008-05-29,Zaporizhzhia,100-200 UAH,Inactive,2,2013-03-21
+787,Mobile,Standard,1981-12-02,Dnipro,100-200 UAH,Active,5,2014-12-07
+788,Fixed Line,Business,1982-08-18,Zaporizhzhia,200-500 UAH,Active,2,2001-05-28
+789,TV,Premium,1997-05-28,Odesa,100-200 UAH,Potential,2,2002-02-21
+790,Fixed Line,Standard,2016-11-13,Dnipro,200-500 UAH,Potential,3,2013-04-22
+791,Fixed Line,Economy,1975-12-29,Lviv,<100 UAH,Potential,3,2008-01-21
+792,Fixed Line,Premium,2008-07-30,Odesa,500+ UAH,Active,4,2021-10-22
+793,Internet,Economy,2006-11-09,Kharkiv,<100 UAH,Inactive,3,2017-12-22
+794,TV,Business,2012-07-05,Kyiv,200-500 UAH,Potential,5,2020-04-16
+795,IoT,Business,2014-06-06,Kyiv,100-200 UAH,Inactive,1,2003-12-14
+796,TV,Business,2014-02-21,Odesa,200-500 UAH,Potential,5,2013-09-06
+797,Internet,Special,2015-01-06,Zaporizhzhia,100-200 UAH,Active,2,2000-08-11
+798,TV,Special,2019-01-01,Poltava,200-500 UAH,Potential,2,2016-02-07
+799,Internet,Special,1986-08-11,Kharkiv,<100 UAH,Inactive,3,2000-12-03
+800,TV,Standard,2016-06-02,Vinnytsia,500+ UAH,Active,2,2014-10-06
+801,TV,Special,2017-05-06,Poltava,500+ UAH,Inactive,1,2004-08-25
+802,Fixed Line,Business,2002-05-22,Odesa,<100 UAH,Active,4,2012-12-12
+803,Mobile,Business,2003-03-17,Poltava,<100 UAH,Inactive,4,2006-01-16
+804,TV,Economy,1987-12-01,Kyiv,<100 UAH,Potential,5,2000-06-28
+805,IoT,Premium,2007-03-29,Vinnytsia,200-500 UAH,Active,4,2015-01-06
+806,Mobile,Premium,2000-02-09,Kyiv,<100 UAH,Inactive,3,2009-10-29
+807,IoT,Standard,2009-04-16,Odesa,500+ UAH,Active,3,2015-11-11
+808,TV,Premium,1977-09-02,Vinnytsia,100-200 UAH,Inactive,2,2001-03-26
+809,Internet,Standard,2010-09-14,Lviv,500+ UAH,Inactive,3,2011-08-12
+810,TV,Economy,2006-02-22,Zaporizhzhia,<100 UAH,Active,3,2001-03-10
+811,Fixed Line,Business,1997-04-12,Dnipro,100-200 UAH,Potential,4,2003-02-24
+812,Internet,Business,1982-12-23,Odesa,500+ UAH,Active,1,2017-03-07
+813,IoT,Standard,1974-11-18,Zaporizhzhia,500+ UAH,Potential,2,2005-01-03
+814,TV,Special,1994-03-24,Poltava,500+ UAH,Inactive,5,2002-01-16
+815,TV,Economy,1977-03-24,Lviv,<100 UAH,Active,4,2003-02-08
+816,Internet,Business,2008-01-24,Kharkiv,100-200 UAH,Active,2,2003-02-05
+817,TV,Business,2016-03-13,Kyiv,<100 UAH,Potential,4,2018-06-25
+818,Mobile,Economy,2010-12-27,Kyiv,200-500 UAH,Potential,3,2012-12-02
+819,IoT,Standard,1986-07-06,Odesa,<100 UAH,Active,5,2017-05-09
+820,TV,Special,1977-04-18,Zaporizhzhia,<100 UAH,Active,5,2005-08-19
+821,TV,Standard,1970-05-25,Kharkiv,200-500 UAH,Inactive,1,2013-09-19
+822,Internet,Economy,2003-02-28,Odesa,<100 UAH,Active,2,2019-09-09
+823,Fixed Line,Premium,1979-05-17,Dnipro,200-500 UAH,Active,5,2011-09-11
+824,IoT,Standard,2005-10-21,Odesa,100-200 UAH,Active,4,2019-01-26
+825,Mobile,Premium,1998-10-02,Kyiv,500+ UAH,Inactive,2,2004-10-10
+826,Mobile,Economy,1993-06-26,Kyiv,100-200 UAH,Potential,3,2021-03-06
+827,Internet,Premium,2008-05-08,Zaporizhzhia,200-500 UAH,Active,1,2001-09-29
+828,Mobile,Business,2019-01-08,Vinnytsia,200-500 UAH,Active,3,2016-09-01
+829,Fixed Line,Premium,1976-06-04,Zaporizhzhia,200-500 UAH,Inactive,5,2004-06-01
+830,TV,Special,1997-07-04,Lviv,200-500 UAH,Active,3,2002-07-24
+831,IoT,Special,1985-08-26,Dnipro,200-500 UAH,Potential,4,2012-03-30
+832,TV,Economy,1971-05-26,Poltava,<100 UAH,Inactive,4,2006-12-11
+833,Internet,Special,1971-06-20,Vinnytsia,<100 UAH,Inactive,2,2004-11-15
+834,TV,Premium,1998-11-11,Vinnytsia,200-500 UAH,Active,1,2009-08-13
+835,Fixed Line,Business,1974-02-22,Vinnytsia,<100 UAH,Active,1,2021-08-25
+836,Mobile,Economy,1972-03-12,Lviv,200-500 UAH,Potential,4,2013-11-09
+837,IoT,Standard,1978-08-22,Poltava,100-200 UAH,Inactive,3,2006-02-06
+838,Fixed Line,Business,1992-12-23,Dnipro,500+ UAH,Inactive,3,2021-08-05
+839,Internet,Standard,1995-01-09,Zaporizhzhia,200-500 UAH,Inactive,2,2006-02-11
+840,IoT,Economy,2015-09-25,Kyiv,200-500 UAH,Inactive,5,2015-10-06
+841,TV,Standard,1990-12-20,Vinnytsia,100-200 UAH,Inactive,5,2005-10-07
+842,Internet,Business,1975-05-21,Vinnytsia,200-500 UAH,Potential,2,2016-12-16
+843,TV,Special,1981-07-16,Vinnytsia,100-200 UAH,Potential,5,2014-02-07
+844,Fixed Line,Economy,2017-03-28,Odesa,100-200 UAH,Potential,4,2012-07-17
+845,Fixed Line,Special,1999-09-27,Kyiv,100-200 UAH,Inactive,1,2010-01-19
+846,Internet,Special,1987-10-04,Lviv,200-500 UAH,Potential,1,2005-04-26
+847,Mobile,Special,2014-08-09,Lviv,100-200 UAH,Inactive,5,2013-05-07
+848,Internet,Business,1985-01-07,Odesa,500+ UAH,Potential,5,2019-02-24
+849,Mobile,Premium,2014-01-09,Vinnytsia,100-200 UAH,Active,5,2000-09-07
+850,Internet,Special,1976-01-20,Kharkiv,200-500 UAH,Active,1,2016-01-18
+851,Internet,Premium,2016-11-17,Kyiv,100-200 UAH,Inactive,5,2019-04-10
+852,IoT,Economy,2016-11-07,Lviv,200-500 UAH,Potential,3,2013-07-06
+853,Mobile,Standard,1987-04-03,Zaporizhzhia,500+ UAH,Active,3,2005-08-29
+854,Mobile,Special,1970-11-17,Kharkiv,200-500 UAH,Inactive,4,2007-09-12
+855,Fixed Line,Premium,1987-08-23,Zaporizhzhia,200-500 UAH,Active,2,2016-05-26
+856,TV,Economy,1979-01-13,Kharkiv,500+ UAH,Active,4,2008-01-13
+857,Fixed Line,Business,1983-04-18,Poltava,500+ UAH,Inactive,1,2000-03-05
+858,Mobile,Economy,2001-04-06,Kyiv,200-500 UAH,Active,3,2002-04-24
+859,IoT,Business,1992-02-21,Lviv,<100 UAH,Active,2,2006-04-01
+860,Mobile,Standard,2006-10-16,Kharkiv,100-200 UAH,Inactive,3,2008-08-11
+861,TV,Standard,2001-10-30,Lviv,500+ UAH,Inactive,5,2007-12-24
+862,TV,Premium,1985-01-07,Kharkiv,200-500 UAH,Inactive,1,2017-08-30
+863,Internet,Business,1986-03-08,Kyiv,100-200 UAH,Active,2,2004-11-07
+864,IoT,Business,2009-11-18,Kyiv,100-200 UAH,Potential,4,2008-12-26
+865,Fixed Line,Standard,1996-08-03,Lviv,<100 UAH,Inactive,1,2017-10-31
+866,IoT,Economy,1976-05-13,Poltava,500+ UAH,Potential,4,2017-05-18
+867,Internet,Economy,1999-04-26,Kyiv,500+ UAH,Potential,4,2004-06-29
+868,Mobile,Premium,1976-11-23,Dnipro,<100 UAH,Active,4,2007-12-22
+869,TV,Standard,2013-05-28,Kyiv,<100 UAH,Inactive,5,2003-06-04
+870,Mobile,Standard,1976-06-17,Zaporizhzhia,100-200 UAH,Active,4,2001-12-21
+871,Mobile,Special,2003-06-13,Odesa,100-200 UAH,Inactive,3,2012-02-20
+872,Internet,Premium,2014-10-23,Kyiv,200-500 UAH,Inactive,2,2006-12-30
+873,Fixed Line,Standard,1974-11-26,Lviv,100-200 UAH,Potential,2,2011-04-02
+874,Mobile,Special,1996-06-29,Zaporizhzhia,<100 UAH,Active,1,2012-11-16
+875,TV,Business,2017-11-15,Vinnytsia,100-200 UAH,Potential,3,2013-04-11
+876,TV,Special,1983-11-21,Kharkiv,<100 UAH,Active,4,2020-08-09
+877,Fixed Line,Standard,1984-01-17,Zaporizhzhia,<100 UAH,Potential,3,2005-02-20
+878,Fixed Line,Economy,1993-06-27,Dnipro,<100 UAH,Inactive,4,2019-09-02
+879,Internet,Premium,2017-05-09,Lviv,<100 UAH,Inactive,4,2001-02-14
+880,IoT,Business,2010-01-09,Lviv,<100 UAH,Inactive,2,2000-08-31
+881,TV,Economy,1983-07-21,Zaporizhzhia,<100 UAH,Active,5,2002-05-20
+882,Mobile,Premium,1981-07-28,Kharkiv,<100 UAH,Inactive,1,2014-02-05
+883,Internet,Business,1979-12-04,Kharkiv,100-200 UAH,Active,2,2011-08-13
+884,Fixed Line,Business,1991-06-22,Poltava,500+ UAH,Potential,4,2003-07-20
+885,Mobile,Standard,2010-05-15,Odesa,100-200 UAH,Potential,1,2003-03-29
+886,IoT,Special,1977-08-11,Lviv,200-500 UAH,Potential,4,2011-08-06
+887,Fixed Line,Economy,2000-10-31,Zaporizhzhia,500+ UAH,Inactive,2,2021-01-02
+888,IoT,Special,1993-08-07,Dnipro,500+ UAH,Active,4,2004-01-01
+889,IoT,Standard,2002-04-18,Odesa,200-500 UAH,Inactive,1,2005-09-04
+890,TV,Standard,1990-02-28,Odesa,200-500 UAH,Inactive,4,2002-08-22
+891,TV,Economy,2007-12-19,Dnipro,<100 UAH,Inactive,2,2013-01-08
+892,IoT,Business,1986-01-15,Kharkiv,100-200 UAH,Active,4,2020-04-19
+893,TV,Premium,2006-01-31,Kharkiv,500+ UAH,Active,1,2005-03-19
+894,Fixed Line,Business,2017-12-13,Lviv,100-200 UAH,Inactive,3,2010-05-07
+895,IoT,Special,1998-12-11,Odesa,100-200 UAH,Inactive,3,2019-11-17
+896,IoT,Economy,2001-09-15,Dnipro,200-500 UAH,Active,5,2015-07-07
+897,Internet,Standard,1996-03-22,Dnipro,<100 UAH,Inactive,5,2011-07-28
+898,Internet,Business,1994-04-13,Zaporizhzhia,100-200 UAH,Active,2,2014-01-01
+899,Internet,Economy,1978-06-03,Zaporizhzhia,200-500 UAH,Potential,4,2016-01-03
+900,Internet,Premium,2004-05-09,Poltava,500+ UAH,Potential,4,2015-12-15
+901,Mobile,Standard,2000-04-15,Dnipro,500+ UAH,Inactive,4,2010-08-15
+902,Internet,Business,1997-08-17,Odesa,500+ UAH,Active,2,2006-03-01
+903,Fixed Line,Standard,1985-04-24,Kyiv,500+ UAH,Active,2,2004-07-07
+904,Mobile,Special,1989-09-17,Kyiv,200-500 UAH,Inactive,4,2020-02-13
+905,Fixed Line,Premium,1991-08-24,Lviv,100-200 UAH,Inactive,1,2001-04-10
+906,Internet,Premium,2002-11-08,Vinnytsia,100-200 UAH,Active,2,2007-05-20
+907,IoT,Premium,2006-04-09,Poltava,100-200 UAH,Potential,5,2015-02-11
+908,Mobile,Special,1985-08-21,Odesa,100-200 UAH,Inactive,1,2013-02-21
+909,IoT,Business,2000-09-18,Vinnytsia,100-200 UAH,Active,3,2009-06-27
+910,Fixed Line,Business,1988-07-04,Odesa,500+ UAH,Potential,4,2002-04-13
+911,Fixed Line,Business,1994-03-31,Kyiv,200-500 UAH,Inactive,5,2003-01-21
+912,Mobile,Business,1974-02-03,Kharkiv,100-200 UAH,Potential,5,2015-04-04
+913,Fixed Line,Business,1998-11-30,Kyiv,200-500 UAH,Potential,5,2010-08-05
+914,Mobile,Economy,2014-10-17,Vinnytsia,200-500 UAH,Inactive,5,2007-06-09
+915,Fixed Line,Special,2017-08-21,Odesa,100-200 UAH,Active,4,2008-03-17
+916,IoT,Premium,1986-09-21,Vinnytsia,500+ UAH,Active,5,2009-05-22
+917,TV,Business,1978-07-02,Dnipro,100-200 UAH,Active,5,2014-12-17
+918,Internet,Business,2018-10-19,Odesa,200-500 UAH,Potential,1,2013-02-28
+919,Internet,Premium,2009-10-22,Poltava,500+ UAH,Potential,2,2001-07-17
+920,TV,Premium,1984-08-25,Lviv,500+ UAH,Potential,3,2003-06-13
+921,TV,Economy,1970-03-23,Kyiv,100-200 UAH,Inactive,4,2001-07-18
+922,Mobile,Special,1983-03-15,Lviv,200-500 UAH,Inactive,3,2000-10-03
+923,Fixed Line,Standard,2017-09-18,Kyiv,100-200 UAH,Inactive,3,2016-12-30
+924,IoT,Economy,1993-09-12,Zaporizhzhia,<100 UAH,Potential,2,2018-08-21
+925,Internet,Standard,1984-09-15,Kyiv,100-200 UAH,Inactive,4,2009-02-11
+926,TV,Economy,1987-02-09,Lviv,500+ UAH,Inactive,1,2021-03-21
+927,TV,Special,1981-06-14,Zaporizhzhia,100-200 UAH,Potential,2,2018-11-30
+928,TV,Special,1998-03-31,Lviv,<100 UAH,Potential,5,2018-11-05
+929,Fixed Line,Standard,1980-11-07,Dnipro,<100 UAH,Potential,5,2008-01-16
+930,IoT,Business,2004-10-09,Vinnytsia,100-200 UAH,Active,3,2020-11-25
+931,TV,Business,1993-08-15,Lviv,100-200 UAH,Inactive,1,2016-05-27
+932,IoT,Business,1977-12-11,Kharkiv,<100 UAH,Inactive,3,2007-09-30
+933,Internet,Standard,2019-05-22,Odesa,200-500 UAH,Potential,5,2019-06-20
+934,Mobile,Business,1989-11-15,Vinnytsia,<100 UAH,Potential,4,2000-02-02
+935,Mobile,Premium,1989-06-17,Dnipro,100-200 UAH,Active,2,2012-07-08
+936,Internet,Premium,1992-02-17,Kyiv,<100 UAH,Inactive,1,2011-05-24
+937,Mobile,Special,1980-11-14,Vinnytsia,500+ UAH,Potential,2,2001-10-16
+938,TV,Standard,2018-02-09,Zaporizhzhia,500+ UAH,Active,2,2018-11-20
+939,Fixed Line,Business,1991-03-19,Kharkiv,<100 UAH,Inactive,3,2006-03-03
+940,Mobile,Premium,1999-04-16,Lviv,100-200 UAH,Potential,5,2008-03-29
+941,Internet,Business,1986-12-13,Lviv,<100 UAH,Inactive,1,2010-05-29
+942,Fixed Line,Economy,1994-01-05,Kharkiv,200-500 UAH,Active,2,2017-11-22
+943,Internet,Business,2015-03-05,Odesa,<100 UAH,Inactive,1,2013-01-11
+944,TV,Special,1978-05-17,Poltava,<100 UAH,Active,1,2012-05-08
+945,Internet,Economy,2009-08-23,Zaporizhzhia,<100 UAH,Potential,5,2007-12-09
+946,TV,Standard,1993-02-02,Poltava,<100 UAH,Active,2,2006-02-15
+947,Mobile,Business,1982-11-03,Zaporizhzhia,200-500 UAH,Potential,1,2010-06-21
+948,Fixed Line,Business,2004-04-20,Kharkiv,500+ UAH,Active,1,2005-08-07
+949,IoT,Economy,1982-03-18,Poltava,100-200 UAH,Inactive,2,2007-06-09
+950,Fixed Line,Special,1977-08-31,Kyiv,100-200 UAH,Potential,2,2009-08-24
+951,IoT,Special,1986-07-01,Vinnytsia,500+ UAH,Active,2,2018-06-23
+952,Mobile,Special,1984-08-20,Kharkiv,100-200 UAH,Inactive,3,2020-05-19
+953,Internet,Standard,2006-06-30,Poltava,500+ UAH,Inactive,2,2018-03-04
+954,TV,Economy,2008-04-10,Vinnytsia,100-200 UAH,Active,5,2011-07-07
+955,TV,Premium,1975-04-16,Poltava,500+ UAH,Inactive,1,2015-08-02
+956,TV,Standard,2008-05-14,Dnipro,100-200 UAH,Potential,3,2007-05-05
+957,Mobile,Special,1982-10-27,Kharkiv,100-200 UAH,Inactive,2,2010-01-21
+958,Mobile,Special,1981-04-27,Zaporizhzhia,100-200 UAH,Inactive,4,2020-08-06
+959,IoT,Business,2005-04-06,Zaporizhzhia,500+ UAH,Active,3,2007-10-10
+960,Fixed Line,Standard,2013-08-28,Kharkiv,200-500 UAH,Potential,3,2003-10-15
+961,Fixed Line,Economy,2000-05-05,Kyiv,<100 UAH,Active,3,2010-05-04
+962,Internet,Special,2016-12-04,Zaporizhzhia,<100 UAH,Potential,3,2014-04-17
+963,IoT,Premium,2003-04-02,Zaporizhzhia,100-200 UAH,Potential,1,2002-10-09
+964,Mobile,Business,2012-09-14,Kyiv,500+ UAH,Inactive,1,2002-09-03
+965,Mobile,Economy,1996-01-06,Odesa,500+ UAH,Inactive,3,2006-08-26
+966,TV,Economy,2014-04-04,Kyiv,100-200 UAH,Inactive,4,2019-11-18
+967,IoT,Economy,1975-10-03,Kyiv,<100 UAH,Inactive,2,2014-10-10
+968,IoT,Business,1989-04-22,Kyiv,<100 UAH,Active,3,2004-11-10
+969,Mobile,Premium,1984-06-17,Kharkiv,<100 UAH,Active,3,2013-03-20
+970,IoT,Special,1977-06-16,Kharkiv,200-500 UAH,Potential,2,2014-06-17
+971,TV,Business,1977-06-19,Kyiv,100-200 UAH,Inactive,1,2011-06-16
+972,TV,Business,1992-02-17,Lviv,100-200 UAH,Potential,3,2016-08-19
+973,Mobile,Premium,1992-02-09,Kyiv,100-200 UAH,Active,3,2000-07-16
+974,Mobile,Economy,2015-07-04,Kyiv,200-500 UAH,Inactive,3,2004-03-08
+975,IoT,Special,2017-01-08,Vinnytsia,<100 UAH,Inactive,3,2021-03-01
+976,IoT,Standard,1970-12-15,Odesa,500+ UAH,Inactive,2,2010-11-25
+977,Fixed Line,Economy,1982-12-13,Kyiv,500+ UAH,Active,1,2001-09-04
+978,IoT,Economy,1970-06-04,Kyiv,500+ UAH,Potential,4,2006-10-01
+979,IoT,Premium,2014-01-15,Vinnytsia,100-200 UAH,Inactive,2,2000-01-15
+980,Internet,Standard,1996-08-03,Odesa,<100 UAH,Inactive,4,2012-09-09
+981,Mobile,Special,1978-01-19,Kyiv,100-200 UAH,Potential,4,2021-11-21
+982,IoT,Special,2011-07-01,Kyiv,<100 UAH,Potential,2,2012-12-03
+983,Internet,Special,1973-08-02,Dnipro,200-500 UAH,Potential,1,2013-05-12
+984,IoT,Premium,2012-08-26,Vinnytsia,100-200 UAH,Inactive,1,2007-03-06
+985,Mobile,Standard,1970-10-22,Zaporizhzhia,100-200 UAH,Inactive,1,2005-03-11
+986,Fixed Line,Standard,1992-09-23,Odesa,<100 UAH,Inactive,2,2011-02-17
+987,TV,Economy,1987-09-08,Odesa,100-200 UAH,Potential,2,2019-09-16
+988,Mobile,Business,2002-06-06,Dnipro,500+ UAH,Inactive,5,2000-03-19
+989,Mobile,Standard,1997-06-29,Odesa,200-500 UAH,Active,2,2012-06-23
+990,Internet,Special,1987-09-05,Vinnytsia,<100 UAH,Inactive,5,2009-05-21
+991,Internet,Special,2019-04-09,Lviv,500+ UAH,Potential,4,2013-08-09
+992,Internet,Business,1991-06-15,Kharkiv,100-200 UAH,Active,2,2018-05-25
+993,Fixed Line,Business,1994-03-21,Kharkiv,<100 UAH,Potential,5,2009-11-01
+994,Internet,Economy,2001-06-02,Vinnytsia,500+ UAH,Inactive,1,2004-10-07
+995,Mobile,Economy,1974-12-15,Odesa,<100 UAH,Active,4,2008-03-31
+996,Internet,Premium,2014-01-15,Kharkiv,500+ UAH,Inactive,2,2003-04-19
+997,IoT,Special,1998-04-13,Kyiv,500+ UAH,Potential,3,2001-11-10
+998,IoT,Premium,2003-10-06,Zaporizhzhia,500+ UAH,Inactive,4,2008-03-26
+999,TV,Special,2016-02-07,Kyiv,100-200 UAH,Inactive,4,2013-09-14
+1000,IoT,Premium,2002-02-04,Lviv,<100 UAH,Potential,5,2005-10-03
