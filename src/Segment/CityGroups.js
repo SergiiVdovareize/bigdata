@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import dataResolver from '../utils/dataResolver';
 import dataDrawer from '../utils/dataDrawer';
+import dataGrouper from '../utils/dataGrouper';
 
 const CityGroups = () => {
   const [data, setData] = useState(null);
@@ -17,9 +18,8 @@ const CityGroups = () => {
     }, [data])
 
     const readData = async () => {
-      const path = '/data/customers.csv'
-      const parsedData = await dataResolver.read(path)
-      const grouped = dataResolver.groupByCity(parsedData)
+      const parsedData = await dataResolver.read()
+      const grouped = dataGrouper.groupByCity(parsedData)
       const normalized = dataResolver.normalize(grouped)
       setData(normalized);
     }

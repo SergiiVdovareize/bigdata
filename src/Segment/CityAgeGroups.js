@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
-import dataDrawer from '../utils/dataDrawer';
 import dataResolver from '../utils/dataResolver';
+import dataDrawer from '../utils/dataDrawer';
 import dataGrouper from '../utils/dataGrouper';
 
-const AgeGroups = () => {
+const CityAgeGroups = () => {
   const [data, setData] = useState(null);
   const svgRef = useRef();
 
@@ -13,17 +13,18 @@ const AgeGroups = () => {
 
     useEffect(() => {
       if (data?.length > 0) {
-        dataDrawer.drawPie(data, svgRef.current)
+        dataDrawer.drawStackedBar(data, svgRef.current)
       }
     }, [data])
 
     const readData = async () => {
       const parsedData = await dataResolver.read()
-      const grouped = dataGrouper.groupByAge(parsedData)
-      const normalized = dataResolver.normalize(grouped)
-      setData(normalized);
+      const grouped = dataGrouper.groupByCityAge(parsedData)
+      // console.log('grouped', grouped)
+      // const normalized = dataResolver.normalize(grouped)
+      setData(grouped);
     }
 
     return <svg ref={svgRef}></svg>;
 }
-export default AgeGroups;
+export default CityAgeGroups;
