@@ -1,12 +1,10 @@
-import BarChart from './BarChart'
 import AgeGroups from './Segment/AgeGroups';
+import CityGroups from './Segment/CityGroups';
 
 const App = () => {
-    // return (<BarChart 
-    //     data={[12, 8, 6, 6, 9, 10]}
-    //     width={700}
-    //     height={300}/>)
-
-    return <AgeGroups/>
+    return <>
+        <AgeGroups/>
+        <CityGroups/>
+    </>
 }
 export default App;

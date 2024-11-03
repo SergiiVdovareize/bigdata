@@ -1,0 +1,101 @@
+id,serviceType,subscriptionType,bd,location,spending,status,serviceRate,signUpDate
+1,Mobile,Economy,1994-11-16,Kyiv,100,Active,3,2004-03-01
+2,IoT,Standard,2020-08-06,Odesa,700,Active,3,2000-04-16
+3,Fixed Line,Economy,2018-03-06,Odesa,200,Active,3,2002-03-31
+4,Internet,Standard,1960-05-09,Dnipro,500,Inactive,2,2000-10-15
+5,Mobile,Business,1997-06-22,Kharkiv,200,Active,2,2000-05-10
+6,Mobile,Economy,2022-10-01,Poltava,500,Active,4,2025-03-12
+7,Mobile,Standard,2020-01-28,Odesa,200,Potential,3,2002-02-17
+8,TV,Premium,1993-03-08,Lviv,50,Inactive,4,2009-02-02
+9,Internet,Economy,2022-11-12,Kharkiv,700,Potential,4,2001-08-10
+10,Fixed Line,Economy,2018-03-15,Kyiv,50,Inactive,5,2006-04-07
+11,Mobile,Economy,2001-03-21,Odesa,200,Active,1,2007-10-27
+12,IoT,Economy,1990-10-08,Kyiv,900,Active,5,2004-12-15
+13,TV,Business,1994-02-08,Kyiv,900,Potential,4,2003-06-29
+14,Mobile,Business,2016-01-19,Poltava,200,Inactive,2,2002-11-27
+15,Mobile,Standard,1988-11-26,Kharkiv,300,Active,5,2002-05-08
+16,Mobile,Business,2015-08-03,Kharkiv,200,Active,5,2014-07-11
+17,Mobile,Business,2012-03-23,Odesa,100,Active,2,2009-09-21
+18,Internet,Economy,1985-06-06,Kyiv,200,Inactive,3,2018-05-12
+19,Mobile,Business,1994-04-16,Kyiv,300,Potential,5,2000-09-22
+20,Mobile,Standard,1971-03-16,Kyiv,300,Active,5,2007-03-10
+21,Internet,Business,1993-08-28,Odesa,300,Active,3,2015-04-04
+22,Mobile,Business,2000-01-02,Kharkiv,300,Active,3,2001-02-03
+23,Mobile,Economy,2020-04-23,Kharkiv,50,Potential,4,2000-05-17
+24,Mobile,Economy,2010-06-14,Kyiv,200,Inactive,4,2007-05-26
+25,Mobile,Economy,2014-07-26,Poltava,50,Inactive,4,2004-09-04
+26,Fixed Line,Standard,2015-05-06,Kharkiv,200,Active,4,2010-02-05
+27,Mobile,Business,1928-01-01,Dnipro,200,Active,4,2000-10-28
+28,Internet,Business,2009-05-01,Dnipro,500,Active,5,2008-09-07
+29,Internet,Economy,1962-01-21,Odesa,200,Active,1,2001-03-26
+30,Mobile,Standard,1995-09-12,Kyiv,100,Inactive,3,2000-12-23
+31,Internet,Standard,1979-08-22,Lviv,100,Inactive,5,2000-12-24
+32,Mobile,Economy,2003-11-18,Kharkiv,300,Potential,5,2009-03-24
+33,Mobile,Economy,1999-06-15,Kyiv,300,Potential,4,2005-12-28
+34,TV,Economy,2004-06-07,Kyiv,100,Active,4,2004-01-20
+35,IoT,Business,2017-01-20,Kyiv,50,Inactive,2,2002-06-07
+36,TV,Economy,1987-11-29,Kyiv,300,Potential,4,2011-06-26
+37,Mobile,Standard,2013-12-24,Vinnytsia,50,Inactive,4,2002-09-23
+38,Mobile,Premium,2022-04-30,Kharkiv,500,Active,3,2009-04-15
+39,Internet,Economy,1994-08-12,Odesa,300,Active,3,2003-03-02
+40,Mobile,Special,2017-08-31,Kyiv,50,Active,4,2002-08-04
+41,Mobile,Special,1945-10-07,Odesa,50,Potential,1,2003-05-27
+42,Mobile,Economy,1938-09-29,Odesa,900,Active,3,2001-12-18
+43,Mobile,Standard,1955-07-22,Kyiv,200,Active,3,2007-07-16
+44,TV,Economy,2010-05-07,Odesa,200,Active,3,2003-10-29
+45,Mobile,Economy,2022-07-30,Lviv,500,Active,2,2001-06-12
+46,Internet,Economy,1950-11-05,Dnipro,700,Active,5,2012-08-01
+47,Mobile,Standard,2007-09-13,Dnipro,900,Active,4,2002-08-26
+48,Internet,Standard,1929-11-22,Kyiv,300,Active,5,2004-04-17
+49,Internet,Economy,1932-04-11,Lviv,200,Active,5,2012-12-21
+50,Mobile,Economy,1970-07-05,Dnipro,50,Inactive,4,2005-05-11
+51,IoT,Business,2013-06-15,Odesa,300,Active,2,2000-09-05
+52,Fixed Line,Economy,2009-09-09,Vinnytsia,200,Inactive,4,2015-05-23
+53,TV,Economy,1970-11-08,Kharkiv,200,Active,4,2005-05-30
+54,TV,Standard,2012-07-26,Kyiv,700,Active,5,2002-03-26
+55,Internet,Special,2017-12-01,Kyiv,100,Inactive,4,2000-10-26
+56,TV,Economy,2000-09-21,Dnipro,200,Active,2,2008-08-26
+57,Mobile,Standard,1947-09-05,Kyiv,50,Active,3,2005-04-19
+58,Mobile,Premium,1990-05-26,Dnipro,200,Active,4,2004-03-04
+59,Mobile,Economy,1999-11-22,Zaporizhzhia,50,Inactive,4,2012-04-13
+60,Mobile,Premium,2020-03-15,Dnipro,100,Active,4,2008-07-04
+61,Mobile,Economy,1996-11-13,Lviv,100,Inactive,4,2000-11-24
+62,Mobile,Standard,1928-01-01,Dnipro,300,Active,5,2002-01-17
+63,TV,Standard,2018-11-14,Odesa,300,Active,4,2001-07-25
+64,Mobile,Standard,2003-01-02,Odesa,200,Active,3,2007-06-17
+65,Mobile,Economy,1965-07-18,Zaporizhzhia,900,Active,2,2000-03-09
+66,Internet,Business,1986-01-15,Lviv,200,Active,3,2004-08-14
+67,Mobile,Economy,1990-04-24,Poltava,100,Active,3,2007-11-14
+68,TV,Economy,1989-10-24,Zaporizhzhia,500,Active,3,2011-06-19
+69,Mobile,Economy,2010-10-22,Kyiv,100,Potential,3,2002-04-17
+70,IoT,Standard,2013-06-27,Kyiv,900,Active,3,2009-06-05
+71,Fixed Line,Standard,1977-08-17,Kyiv,50,Active,3,2000-08-22
+72,Mobile,Economy,1977-07-08,Kyiv,900,Inactive,5,2010-04-05
+73,Mobile,Standard,1967-10-03,Kyiv,50,Active,2,2000-09-29
+74,TV,Economy,1956-01-27,Kharkiv,500,Active,4,2002-10-09
+75,Fixed Line,Standard,2003-05-26,Kyiv,200,Inactive,4,2008-09-27
+76,Fixed Line,Economy,2003-12-11,Lviv,900,Potential,5,2000-11-20
+77,Fixed Line,Standard,1979-03-04,Kharkiv,50,Active,2,2001-06-04
+78,Mobile,Economy,1994-04-06,Kyiv,200,Potential,4,2007-01-06
+79,Mobile,Business,1989-11-10,Kharkiv,900,Active,5,2006-12-21
+80,Mobile,Economy,1979-07-05,Kyiv,200,Active,5,2005-08-11
+81,TV,Economy,1962-07-27,Kyiv,300,Active,5,2006-06-26
+82,Internet,Economy,2011-09-17,Kharkiv,300,Potential,3,2004-04-13
+83,Mobile,Business,2010-02-09,Dnipro,200,Active,3,2001-08-03
+84,Mobile,Business,2020-04-20,Vinnytsia,300,Active,5,2002-04-28
+85,Mobile,Economy,1999-05-13,Kharkiv,200,Active,5,2001-02-04
+86,Mobile,Standard,2021-12-31,Kharkiv,700,Active,4,2013-02-02
+87,Fixed Line,Business,2005-11-05,Kyiv,50,Active,4,2004-10-17
+88,Internet,Standard,2001-08-02,Kyiv,100,Active,3,2002-10-21
+89,TV,Standard,2013-10-04,Kharkiv,900,Active,5,2003-05-24
+90,Mobile,Economy,1998-07-15,Kharkiv,500,Active,3,2016-02-11
+91,Mobile,Economy,2022-02-26,Poltava,200,Active,3,2000-11-28
+92,Fixed Line,Business,2021-12-17,Odesa,300,Active,4,2004-10-30
+93,Fixed Line,Business,1975-08-28,Lviv,100,Active,4,2003-11-10
+94,Internet,Standard,2010-10-11,Kharkiv,100,Active,3,2005-03-05
+95,Fixed Line,Economy,2019-04-14,Lviv,200,Inactive,2,2000-02-06
+96,Mobile,Economy,2002-10-12,Zaporizhzhia,200,Active,4,2011-04-06
+97,Internet,Premium,1982-10-07,Vinnytsia,200,Active,3,2014-09-23
+98,Mobile,Business,2016-05-06,Odesa,50,Active,4,2004-07-23
+99,Mobile,Business,1996-04-20,Kharkiv,900,Active,3,2006-07-13
+100,Mobile,Premium,2020-07-23,Kharkiv,900,Active,4,2014-01-01
