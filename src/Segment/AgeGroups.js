@@ -1,29 +1,60 @@
-import React, { useEffect, useRef, useState } from 'react'
-import dataDrawer from '../utils/dataDrawer';
+import React, { useEffect, useState } from 'react'
+import ReactECharts from 'echarts-for-react'
 import dataResolver from '../utils/dataResolver';
 import dataGrouper from '../utils/dataGrouper';
 
 const AgeGroups = () => {
   const [data, setData] = useState(null);
-  const svgRef = useRef();
+  const [chartOption, setChartOption] = useState(null);
 
-    useEffect(() => {
-      readData();
-    }, [])
+  useEffect(() => {
+    readData();
+  }, [])
 
-    useEffect(() => {
-      if (data?.length > 0) {
-        dataDrawer.drawPie(data, svgRef.current)
-      }
-    }, [data])
+  useEffect(() => {
+    if (data?.length > 0) {
+      
+      const option = {
+        title: {
+          text: 'Age Segmentation',
+          subtext: 'AI generated data',
+          left: 'center'
+        },
+        tooltip: {
+          trigger: 'item'
+        },
+        legend: {
+          orient: 'vertical',
+          left: 'left'
+        },
+        series: [
+          {
+            name: 'Access From',
+            type: 'pie',
+            radius: '50%',
+            data,
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+              }
+            }
+          }
+        ]
+      };
 
-    const readData = async () => {
-      const parsedData = await dataResolver.read()
-      const grouped = dataGrouper.groupByAge(parsedData)
-      const normalized = dataResolver.normalize(grouped)
-      setData(normalized);
+      setChartOption(option)
     }
+  }, [data])
 
-    return <svg ref={svgRef}></svg>;
+  const readData = async () => {
+    const parsedData = await dataResolver.read()
+    const grouped = dataGrouper.groupByAge(parsedData)
+    const normalized = dataResolver.normalize(grouped)
+    setData(normalized);
+  }
+
+  return chartOption && <ReactECharts option={chartOption} />;
 }
 export default AgeGroups;

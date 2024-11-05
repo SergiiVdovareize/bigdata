@@ -7,53 +7,53 @@ const ageGroups = [
 ]
 
 const dataGrouper = {
-    groupByCity: (data) => {
-      const groups = []
+  groupByCity: (data) => {
+    const groups = []
 
-      data.forEach(item => {
-          const city = item.location;
-          const currentGroup = groups.find(gr => gr.name === city)
-          if (currentGroup) {
-            currentGroup.values.push(item)
-          } else {
-            groups.push({name: city, values: []})
-          }
-      });
-      return groups;
-    },
+    data.forEach(item => {
+        const city = item.location;
+        const currentGroup = groups.find(gr => gr.name === city)
+        if (currentGroup) {
+          currentGroup.values.push(item)
+        } else {
+          groups.push({name: city, values: []})
+        }
+    });
+    return groups;
+  },
 
-    groupByAge: (data) => {
-        const groups = [...ageGroups].map(gr => ({...gr, values: []}))
-    
-        data.forEach(item => {
-          const age = item.age;
-          const currGroup = groups.find(gr => (age >= gr.min && age <= gr.max))
-          currGroup.values.push(item)
-        });
+  groupByAge: (data) => {
+      const groups = [...ageGroups].map(gr => ({...gr, values: []}))
   
-        return groups;
-    },
-
-    groupByCityAge: (data) => {
-      const groups = []
-
       data.forEach(item => {
-          const { age, location: city } = item
-          const currentAgeGroup = ageGroups.find(gr => (age >= gr.min && age <= gr.max))
-          const currentGroup = groups.find(gr => (gr.name === city && gr.ageGroupId === currentAgeGroup.id))
-          // const
-          if (currentGroup) {
-            // currentGroup.values.push(item)
-            currentGroup.value++
-          } else {
-            groups.push({name: city, ageGroup: currentAgeGroup.name, ageGroupId: currentAgeGroup.id, value: 0})
-          }
+        const age = item.age;
+        const currGroup = groups.find(gr => (age >= gr.min && age <= gr.max))
+        currGroup.values.push(item)
       });
-
-      const tmp = groups.slice(1);
 
       return groups;
   },
+
+  groupByCityAge: (data) => {
+    const groups = []
+
+    data.forEach(item => {
+        const { age, location: city } = item
+        const currentAgeGroup = ageGroups.find(gr => (age >= gr.min && age <= gr.max))
+        const currentGroup = groups.find(gr => (gr.name === city && gr.ageGroupId === currentAgeGroup.id))
+        // const
+        if (currentGroup) {
+          // currentGroup.values.push(item)
+          currentGroup.value++
+        } else {
+          groups.push({name: city, ageGroup: currentAgeGroup.name, ageGroupId: currentAgeGroup.id, value: 0})
+        }
+    });
+
+
+    return groups;
+  },
+  ageGroups,
 }
 
 export default dataGrouper;
