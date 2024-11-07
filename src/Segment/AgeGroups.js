@@ -23,10 +23,10 @@ const AgeGroups = () => {
         tooltip: {
           trigger: 'item'
         },
-        legend: {
-          orient: 'vertical',
-          left: 'left'
-        },
+        // legend: {
+        //   orient: 'vertical',
+        //   left: 'left'
+        // },
         series: [
           {
             name: 'Access From',
@@ -55,6 +55,6 @@ const AgeGroups = () => {
     setData(normalized);
   }
 
-  return chartOption && <ReactECharts option={chartOption} />;
+  return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
 export default AgeGroups;

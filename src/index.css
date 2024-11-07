@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.root-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns, each 1 fraction of the available width */
+  grid-template-rows: repeat(2, 1fr);    /* 2 rows, each 1 fraction of the available height */
+  height: 100vh;                         /* Full viewport height */
+}
+
+.grid-item {
+  border: 1px solid #dfdfdf;                /* Optional: for visual separation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .echarts-for-react {
+    width: 100%;
+    height: 100%;
+  }
+}

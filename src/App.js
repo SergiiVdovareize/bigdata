@@ -1,16 +1,6 @@
-import MonthSpending from './Line/MonthSpending';
-import Ratings from './Radar/Ratings';
-import AgeGroups from './Segment/AgeGroups';
-import CityAgeGroups from './Segment/CityAgeGroups';
-import CityGroups from './Segment/CityGroups';
+import Container from './Container';
 
 const App = () => {
-    return <>
-        {/* <AgeGroups/> */}
-        {/* <CityGroups/> */}
-        {/* <CityAgeGroups/> */}
-        {/* <MonthSpending/> */}
-        <Ratings />
-    </>
+    return <Container/>
 }
 export default App;

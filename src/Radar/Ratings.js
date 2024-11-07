@@ -14,10 +14,14 @@ const Ratings = () => {
       if (!!data) {
         const option = {
           title: {
-            text: 'Customers Satisfaction Level'
+            text: 'Customers Satisfaction Level',
+            subtext: 'AI generated data',
+            left: 'center'
           },
           legend: {
-            data: ['Ukraine', 'World']
+            data: ['Ukraine', 'World'],
+            left: 'center',
+            bottom: 0
           },
           radar: {
             // shape: 'circle',
@@ -96,6 +100,6 @@ const Ratings = () => {
       setData(average);
     }
 
-    return chartOption && <ReactECharts option={chartOption} />;
+    return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
 export default Ratings;

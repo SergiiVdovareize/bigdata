@@ -23,10 +23,6 @@ const CityGroups = () => {
         tooltip: {
           trigger: 'item'
         },
-        // legend: {
-        //   orient: 'vertical',
-        //   left: 'left'
-        // },
         series: [
           {
             name: 'Access From',
@@ -55,6 +51,6 @@ const CityGroups = () => {
       setData(normalized);
     }
 
-    return chartOption && <ReactECharts option={chartOption} />;
+    return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
 export default CityGroups;

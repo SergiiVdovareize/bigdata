@@ -21,6 +21,11 @@ const CityAgeGroups = () => {
       const groups = dataGrouper.ageGroups
       console.log('groups', groups)
       const option = {
+        title: {
+          text: 'City Age Groups',
+          subtext: 'AI generated data',
+          left: 'center'
+        },
         xAxis: {
           data: cities,
           type: 'category',
@@ -30,9 +35,7 @@ const CityAgeGroups = () => {
             rotate: 30
           },
         },
-        yAxis: {
-          name: 'age groups'
-        },
+        yAxis: {},
         series: groups.map(group => {
           return {
             data: data.map(city => city.values.find(val => val.ageGroupId === group.id)?.value),
@@ -71,6 +74,6 @@ const CityAgeGroups = () => {
       setData(normalized);
     }
 
-    return chartOption && <ReactECharts option={chartOption} />;
+    return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
 export default CityAgeGroups;
