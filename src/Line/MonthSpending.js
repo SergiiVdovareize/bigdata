@@ -21,8 +21,6 @@ const MonthSpending = () => {
     const readData = async () => {
       const dataFile = '/data/spending-1000.csv';
       const parsedData = await dataResolver.read(dataFile)
-      // console.log('parsedData', parsedData)
-      // const grouped = dataGrouper.groupByCityAge(parsedData)
       setData(parsedData);
     }
 

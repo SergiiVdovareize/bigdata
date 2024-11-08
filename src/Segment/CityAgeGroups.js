@@ -16,10 +16,8 @@ const CityAgeGroups = () => {
         return
       }
 
-      console.log('data', data)
       const cities = data.map(item => item.name)
       const groups = dataGrouper.ageGroups
-      console.log('groups', groups)
       const option = {
         title: {
           text: 'City Age Groups',
@@ -45,8 +43,6 @@ const CityAgeGroups = () => {
         })
       };
 
-      console.log('option', option)
-
       setChartOption(option)
     }, [data])
 
@@ -69,8 +65,6 @@ const CityAgeGroups = () => {
       })
 
       normalized.sort((a, b) => b.total - a.total)
-
-      // console.log('normalized', normalized)
       setData(normalized);
     }
 
