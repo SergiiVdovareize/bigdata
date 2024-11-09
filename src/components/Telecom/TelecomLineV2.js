@@ -2,9 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import dataResolver from '../../utils/dataResolver';
 import ReactECharts from 'echarts-for-react'
 
-const TelecomLine = () => {
+const TelecomLine2 = () => {
   const [data, setData] = useState(null);
-  const [date, setDate] = useState(null);
   const [chartOption, setChartOption] = useState(null);
 
     useEffect(() => {
@@ -15,15 +14,19 @@ const TelecomLine = () => {
 
       if (data?.rsrp?.length > 0) {
         const option = {
+          title: {
+            text: 'RSRP/RSRQ ⇒ CQI',
+            left: 'center'
+          },
           tooltip: {
             trigger: 'axis',
-            position: function (pt) {
-              return [pt[0], '50%'];
+            axisPointer: {
+              animation: false
             }
           },
-          title: {
-            left: 'center',
-            text: 'RSRP/RSRQ'
+          legend: {
+            data: ['RSRP', 'RSRQ', 'CQI'],
+            left: 10
           },
           toolbox: {
             feature: {
@@ -34,42 +37,83 @@ const TelecomLine = () => {
               saveAsImage: {}
             }
           },
-          xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            data: data.timestamp
-          },
-          yAxis: {
-            type: 'value',
-            boundaryGap: [0, '10%']
+          axisPointer: {
+            link: [
+              {
+                xAxisIndex: 'all'
+              }
+            ]
           },
           dataZoom: [
             {
-              type: 'inside',
+              show: true,
+              realtime: true,
               start: 0,
-              end: 20
+              end: 20,
+              xAxisIndex: [0, 1]
             },
             {
+              type: 'inside',
+              realtime: true,
               start: 0,
-              end: 10
+              end: 20,
+              xAxisIndex: [0, 1]
             }
           ],
-          series: [
+          grid: [
+            {
+              left: 60,
+              right: 50,
+              top: '55%',
+              height: '35%'
+            },
+            {
+              left: 60,
+              right: 50,
+              height: '35%'
+            },
+            
+          ],
+          xAxis: [
+            {
+              type: 'category',
+              // boundaryGap: false,
+              axisLine: { onZero: true },
+              data: data.timestamp,
+              position: 'top'
+            },
+            {
+              gridIndex: 1,
+              type: 'category',
+              // boundaryGap: false,
+              axisLine: { onZero: true },
+              data: data.timestamp,
+            },
+            
+          ],
+          yAxis: [
+            
             {
               name: 'CQI',
-              type: 'line',
-              symbol: 'none',
-              sampling: 'lttb',
-              itemStyle: {
-                color: 'rgba(0, 166, 19, 1)'
-              },
-              data: data.cqi
+              type: 'value',
+              max: 18
             },
+            {
+              gridIndex: 1,
+              name: 'RSRP/RSRQ',
+              type: 'value',
+              position: 'center',
+              min: -120
+            },
+          ],
+
+          series: [
             {
               name: 'RSRQ',
               type: 'line',
+              xAxisIndex: 1,
+              yAxisIndex: 1,
               symbol: 'none',
-              sampling: 'lttb',
               itemStyle: {
                 color: 'rgba(243, 96, 12, 1)'
               },
@@ -78,12 +122,22 @@ const TelecomLine = () => {
             {
               name: 'RSRP',
               type: 'line',
+              xAxisIndex: 1,
+              yAxisIndex: 1,
               symbol: 'none',
-              sampling: 'lttb',
               itemStyle: {
                 color: 'rgba(193, 8, 8, 1)'
               },
               data: data.rsrp
+            },
+            {
+              name: 'CQI',
+              type: 'line',
+              symbol: 'none',
+              itemStyle: {
+                color: 'rgba(0, 166, 19, 1)'
+              },
+              data: data.cqi
             },
           ]
         };
@@ -120,6 +174,6 @@ const TelecomLine = () => {
       setData(normalized);
     }
 
-    return chartOption && <ReactECharts option={chartOption} style={{height: '700px'}}/>;
+    return chartOption && <ReactECharts option={chartOption} style={{height: '800px'}}/>;
 }
-export default TelecomLine;
+export default TelecomLine2;

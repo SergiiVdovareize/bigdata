@@ -5,23 +5,23 @@ import Expenses from "../components/Treemap/Expenses";
 
 const Dashboard = () => {
     return <div className="root-grid-container">
-        <div className="grid-item">
+        <div className="grid-item chart-wrapper">
             <AgeGroups/>
         </div>
-        <div className="grid-item">
+        <div className="grid-item chart-wrapper">
             <CityAgeGroups/>
         </div>
-        <div className="grid-item">
+        <div className="grid-item chart-wrapper">
             <Ratings />
         </div>
-        <div className="grid-item">
+        <div className="grid-item chart-wrapper">
             <Expenses />
         </div>
-        <div className="grid-item">
+        <div className="grid-item chart-wrapper">
             <CityAgeGroups/>
         </div>
         
-        <div className="grid-item">6</div>
+        <div className="grid-item chart-wrapper">6</div>
     </div>
 }
 export default Dashboard;
