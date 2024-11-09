@@ -49,7 +49,7 @@ const TelecomLine2 = () => {
               show: true,
               realtime: true,
               start: 0,
-              end: 20,
+              end: 50,
               xAxisIndex: [0, 1]
             },
             {
@@ -64,13 +64,13 @@ const TelecomLine2 = () => {
             {
               left: 60,
               right: 50,
-              top: '55%',
-              height: '35%'
+              top: '75%',
+              height: '15%'
             },
             {
               left: 60,
               right: 50,
-              height: '35%'
+              height: '55%'
             },
             
           ],
@@ -115,7 +115,7 @@ const TelecomLine2 = () => {
               yAxisIndex: 1,
               symbol: 'none',
               itemStyle: {
-                color: 'rgba(243, 96, 12, 1)'
+                color: 'rgba(147, 63, 0, 1)'
               },
               data: data.rsrq
             },
