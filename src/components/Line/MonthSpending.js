@@ -20,7 +20,7 @@ const MonthSpending = () => {
 
     const readData = async () => {
       const dataFile = '/data/spending-1000.csv';
-      const parsedData = await dataResolver.read(dataFile)
+      const parsedData = await dataResolver.read(dataFile, false)
       setData(parsedData);
     }
 

@@ -69,7 +69,7 @@ const Ratings = () => {
 
     const readData = async () => {
       const dataFile = '/data/rating-3000.csv';
-      const parsedData = await dataResolver.read(dataFile)
+      const parsedData = await dataResolver.read(dataFile, false)
       const split = {
         ukraine: [],
         world: [],

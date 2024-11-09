@@ -1,7 +1,8 @@
+import TelecomLine from "../components/Telecom/TelecomLine";
 
 const Home = () => {
     return <div>
-        HOME
+        <TelecomLine />
     </div>
 }
 export default Home;

@@ -242,7 +242,7 @@ const Expenses = () => {
 
     const readData = async () => {
       const dataFile = '/data/expenses-5000.csv';
-      const parsedData = await dataResolver.read(dataFile)
+      const parsedData = await dataResolver.read(dataFile, false)
       const normalized = []
       parsedData.forEach(item => {
         if (!normalized[item.category0]) {

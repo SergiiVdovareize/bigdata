@@ -47,7 +47,7 @@ const CityAgeGroups = () => {
     }, [data])
 
     const readData = async () => {
-      const parsedData = await dataResolver.read()
+      const parsedData = await dataResolver.read('/data/customers-5000.csv', false)
       const grouped = dataGrouper.groupByCityAge(parsedData)
 
       const normalized = []
