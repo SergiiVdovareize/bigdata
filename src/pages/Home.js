@@ -7,7 +7,7 @@ const Home = () => {
             <div className="cell chart-wrapper">
                 <TelecomLine2 />
             </div>
-            <div className="cell chart-wrapper">Left Cell 2</div>
+            {/* <div className="cell chart-wrapper">Left Cell 2</div> */}
         </div>
         <div className="right-column">
             <div className="cell chart-wrapper">Right Cell 1</div>

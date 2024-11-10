@@ -176,6 +176,6 @@ const TelecomLine2 = () => {
       setData(normalized);
     }
 
-    return chartOption && <ReactECharts option={chartOption} style={{height: '800px'}}/>;
+    return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
 export default TelecomLine2;
