@@ -15,7 +15,8 @@ const TelecomLine2 = () => {
       if (data?.rsrp?.length > 0) {
         const option = {
           title: {
-            text: 'RSRP/RSRQ ⇒ CQI',
+            text: 'RSRQ / RSRP',
+            subtext: 'test data',
             left: 'center'
           },
           tooltip: {
@@ -25,7 +26,7 @@ const TelecomLine2 = () => {
             }
           },
           legend: {
-            data: ['RSRP', 'RSRQ', 'CQI'],
+            data: ['RSRQ', 'RSRP'],
             left: 10
           },
           toolbox: {
@@ -64,13 +65,13 @@ const TelecomLine2 = () => {
             {
               left: 60,
               right: 50,
-              top: '75%',
-              height: '15%'
+              top: '55%',
+              height: '35%'
             },
             {
               left: 60,
               right: 50,
-              height: '55%'
+              height: '35%'
             },
             
           ],
@@ -92,18 +93,19 @@ const TelecomLine2 = () => {
             
           ],
           yAxis: [
-            
             {
-              name: 'CQI',
+              name: 'RSRP',
               type: 'value',
-              max: 18
+              max: -60,
+              min: -120
             },
             {
               gridIndex: 1,
-              name: 'RSRP/RSRQ',
+              name: 'RSRQ',
               type: 'value',
               position: 'center',
-              min: -120
+              max: -5,
+              min: -25
             },
           ],
 
@@ -122,23 +124,23 @@ const TelecomLine2 = () => {
             {
               name: 'RSRP',
               type: 'line',
-              xAxisIndex: 1,
-              yAxisIndex: 1,
+              // xAxisIndex: 1,
+              // yAxisIndex: 1,
               symbol: 'none',
               itemStyle: {
                 color: 'rgba(193, 8, 8, 1)'
               },
               data: data.rsrp
             },
-            {
-              name: 'CQI',
-              type: 'line',
-              symbol: 'none',
-              itemStyle: {
-                color: 'rgba(0, 166, 19, 1)'
-              },
-              data: data.cqi
-            },
+            // {
+            //   name: 'CQI',
+            //   type: 'line',
+            //   symbol: 'none',
+            //   itemStyle: {
+            //     color: 'rgba(0, 166, 19, 1)'
+            //   },
+            //   data: data.cqi
+            // },
           ]
         };
 
