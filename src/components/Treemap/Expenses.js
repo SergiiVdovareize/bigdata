@@ -197,7 +197,7 @@ const Expenses = () => {
                 treePath.push(treePathInfo[i].name);
               }
               return [
-                `<div class="tooltip-title">${info.name}</div>`,
+                `<div className="tooltip-title">${info.name}</div>`,
                 `Витрати: ${value} грн`
               ].join('');
             }
