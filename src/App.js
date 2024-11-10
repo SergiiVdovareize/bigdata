@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Live from './pages/Live';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
     return (
-        <Router>
+        <HashRouter>
           <Routes>
-            <Route path="/" element={<Home />} /> 
+            <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/live" element={<Live />} />
           </Routes>
-        </Router>
+        </HashRouter>
       );
 }
 export default App;
