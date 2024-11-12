@@ -151,7 +151,6 @@ const TelecomLine2 = () => {
     const readData = async () => {
       const fileName = 'B_2018.02.11_13.30.46.csv';
       const parsedData = await dataResolver.readPedestrians(fileName)
-      console.log('parsedData', parsedData[0])
       const normalized = {
         rsrp: [],
         rsrq: [],
