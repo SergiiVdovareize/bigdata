@@ -1,22 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
-
-const bandwidthOptions = [
-  { value: 1, label: '1.4Mhz' },
-  { value: 3, label: '3Mhz' },
-  { value: 5, label: '5Mhz' },
-  { value: 10, label: '10Mhz' },
-  { value: 15, label: '15Mhz' },
-  { value: 20, label: '20Mhz' },
-]
-
-const testDataOptions = [
-  { value: 'static', label: 'Static' },
-  { value: 'pedestrian', label: 'Pedestrian' },
-  { value: 'car', label: 'Car' },
-  { value: 'bus', label: 'Bus' },
-  { value: 'train', label: 'Train' },
-]
+import { bandwidthOptions, testDataOptions } from '../../constants/constants'
 
 const Menu = (params) => {
   const {onTestDataChange} = params

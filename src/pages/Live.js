@@ -4,6 +4,7 @@ import LiveLine from "../components/Telecom/LiveLine";
 import TelecomLine2 from "../components/Telecom/TelecomLineV2";
 import dataResolver from "../utils/dataResolver";
 import Menu from "../components/Elements/Menu";
+import LeafletMap from "../components/Map/LeafletMap";
 
 const Live = () => {
     const [data, setData] = useState(null);
@@ -92,6 +93,8 @@ const Live = () => {
             rsrq: [],
             cqi: [],
             timestamp: [],
+            long: [],
+            lat: [],
         }
 
         parsedData.forEach(line => {
@@ -102,6 +105,8 @@ const Live = () => {
             normalized.rsrp.push(line.RSRP)
             normalized.rsrq.push(line.RSRQ)
             normalized.cqi.push(line.CQI)
+            normalized.long.push(line.Longitude)
+            normalized.lat.push(line.Latitude)
 
             const dt = line.Timestamp.split('_');
             const formattedDate = dt[1].replaceAll('.', ':')
@@ -114,6 +119,8 @@ const Live = () => {
             rsrq: normalized.rsrq.slice(0, visibleLength),
             rsrp: normalized.rsrp.slice(0, visibleLength),
             cqi: normalized.cqi.slice(0, visibleLength),
+            long: normalized.long.slice(0, visibleLength),
+            lat: normalized.lat.slice(0, visibleLength),
             timestamp: normalized.timestamp.slice(0, visibleLength)
         }
 
@@ -144,7 +151,9 @@ const Live = () => {
                 <div className="cell chart-wrapper">
                     <CodeRate data={data}/>
                 </div>
-                <div className="cell chart-wrapper">CHANNEL QUALITY</div>
+                <div className="cell chart-wrapper">
+                    <LeafletMap lat={data?.lat[currentIndex.current]} lng={data?.long[currentIndex.current]}/>
+                </div>
             </div>
         </div>
     </div>
