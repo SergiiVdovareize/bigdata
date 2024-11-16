@@ -54,7 +54,7 @@ const dataResolver = {
         }
     },
 
-    readPedestrians: async (filename = 'B_2018.02.11_13.30.46.csv') => {
+    readPedestrians: async (filename = 'A_2017.12.04_13.35.53.csv') => {
         return await dataResolver.read(`${telecomBasePath}/pedestrian/${filename}`)
     },
 
@@ -62,11 +62,11 @@ const dataResolver = {
         return await dataResolver.read(`${telecomBasePath}/static/${filename}`)
     },
 
-    readCar: async (filename = 'B_2018.01.18_14.38.07.csv') => {
+    readCar: async (filename = 'A_2017.12.08_07.01.34.csv') => {
         return await dataResolver.read(`${telecomBasePath}/car/${filename}`)
     },
 
-    readBus: async (filename = 'B_2018.01.27_12.09.59.csv') => {
+    readBus: async (filename = 'A_2018.01.27_10.58.49.csv') => {
         return await dataResolver.read(`${telecomBasePath}/bus/${filename}`)
     },
 

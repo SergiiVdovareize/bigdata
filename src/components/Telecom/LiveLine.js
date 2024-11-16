@@ -21,8 +21,8 @@ const LiveLine = ({params, data}) => {
         xAxis: {
           type: 'category',
           axisLabel: {
-            interval: 16,
-            rotate: 30
+            interval: 20,
+            rotate: 15
           },
           splitLine: {
             show: true

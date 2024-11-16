@@ -6,11 +6,24 @@ import dataResolver from "../utils/dataResolver";
 import Menu from "../components/Elements/Menu";
 import LeafletMap from "../components/Map/LeafletMap";
 
+const propsMap = {
+    rsrp: 'RSRP',
+    rsrq: 'RSRQ',
+    cqi: 'CQI',
+    timestamp: 'Timestamp',
+    lng: 'Longitude',
+    lat: 'Latitude',
+}
+
+
 const Live = () => {
     const [data, setData] = useState(null);
     const [currentData, setCurrentData] = useState(null);
     const cashedData = useRef(null);
     const timeoutId = useRef(null);
+
+    const [position, setPosition] = useState({});
+    const [path, setPath] = useState([]);
     
     const visibleLength = 200;
     const currentIndex = useRef(visibleLength);
@@ -20,7 +33,6 @@ const Live = () => {
     }, [])
 
     useEffect(() => {
-        console.log('useEffect')
         if (timeoutId.current) {
             clearTimeout(timeoutId.current)
         }
@@ -61,52 +73,38 @@ const Live = () => {
         if (!data) {
             return;
         }
-        const updatedData = {
-          rsrq: [...data.rsrq],
-          rsrp: [...data.rsrp],
-          cqi: [...data.cqi],
-          timestamp: [...data.timestamp]
-        }
-    
+
+        const updatedData = {}
+
+        Object.keys(propsMap).forEach(prop => {
+            updatedData[prop] = [...data[prop]]
+        })
         
-        updatedData.rsrq.shift()
-        updatedData.rsrq.push(cashedData.current.rsrq[currentIndex.current])
-    
-        updatedData.rsrp.shift()
-        updatedData.rsrp.push(cashedData.current.rsrp[currentIndex.current])
-    
-        updatedData.cqi.shift()
-        updatedData.cqi.push(cashedData.current.cqi[currentIndex.current])
-    
-        updatedData.timestamp.shift()
-        updatedData.timestamp.push(cashedData.current.timestamp[currentIndex.current])
-    
+        Object.keys(propsMap).forEach(prop => {
+            updatedData[prop]?.shift()
+            updatedData[prop]?.push(cashedData.current[prop][currentIndex.current])
+        })
+
         currentIndex.current = currentIndex.current >= cashedData.current.rsrq.length ? 0 : currentIndex.current + 1
         setData(updatedData)
     }
 
-    const readData = async (type = null) => {
+    const readData = async (type = null, refreshPath = false) => {
         // const fileName = 'A_2017.11.21_15.35.33.csv';
         const parsedData = await dataResolver.readDataType(type)
-        const normalized = {
-            rsrp: [],
-            rsrq: [],
-            cqi: [],
-            timestamp: [],
-            long: [],
-            lat: [],
-        }
+        const normalized = {}
+        Object.keys(propsMap).forEach(prop => {
+            normalized[prop] = []
+        })
 
         parsedData.forEach(line => {
             if (!line.RSRP || !line.RSRQ || !line.Timestamp) {
                 return
             }
 
-            normalized.rsrp.push(line.RSRP)
-            normalized.rsrq.push(line.RSRQ)
-            normalized.cqi.push(line.CQI)
-            normalized.long.push(line.Longitude)
-            normalized.lat.push(line.Latitude)
+            Object.entries(propsMap).forEach(([key, value]) => {
+                normalized[key].push(line[value])    
+            })
 
             const dt = line.Timestamp.split('_');
             const formattedDate = dt[1].replaceAll('.', ':')
@@ -115,20 +113,25 @@ const Live = () => {
 
         cashedData.current = normalized;
 
-        const visible = {
-            rsrq: normalized.rsrq.slice(0, visibleLength),
-            rsrp: normalized.rsrp.slice(0, visibleLength),
-            cqi: normalized.cqi.slice(0, visibleLength),
-            long: normalized.long.slice(0, visibleLength),
-            lat: normalized.lat.slice(0, visibleLength),
-            timestamp: normalized.timestamp.slice(0, visibleLength)
+        const visible = {}
+        Object.keys(propsMap).forEach(prop => {
+            visible[prop] = normalized[prop].slice(0, visibleLength)
+        })
+
+        const position = { lat: visible?.lat[visibleLength-1], lng: visible?.lng[visibleLength-1] };
+        setPosition(position)
+        console.log('path', path)
+        if (refreshPath) {
+            setPath([[position.lat, position.lng]])
+        } else {
+            setPath([...path, [position.lat, position.lng]])
         }
 
         setData(visible);
     }
 
     const onTestDataChange = ({value}) => {
-        readData(value);
+        readData(value, true);
     }
 
     return <div className="root-container">
@@ -152,7 +155,7 @@ const Live = () => {
                     <CodeRate data={data}/>
                 </div>
                 <div className="cell chart-wrapper">
-                    <LeafletMap lat={data?.lat[currentIndex.current]} lng={data?.long[currentIndex.current]}/>
+                    <LeafletMap position={position} path={path}/>
                 </div>
             </div>
         </div>
