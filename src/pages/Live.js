@@ -87,6 +87,13 @@ const Live = () => {
 
         currentIndex.current = currentIndex.current >= cashedData.current.rsrq.length ? 0 : currentIndex.current + 1
         setData(updatedData)
+
+        const position = { lat: updatedData?.lat[visibleLength-1], lng: updatedData?.lng[visibleLength-1] };
+        setPosition(position)
+
+        if (path[path.length-1][0] !== position.lat || path[path.length-1][1] !== position.lng) {
+            setPath([...path, [position.lat, position.lng]])
+        }
     }
 
     const readData = async (type = null, refreshPath = false) => {
@@ -103,12 +110,14 @@ const Live = () => {
             }
 
             Object.entries(propsMap).forEach(([key, value]) => {
-                normalized[key].push(line[value])    
+                if (key === 'timestamp') {
+                    const dt = line[value].split('_');
+                    const formattedDate = dt[1].replaceAll('.', ':')
+                    normalized[key].push(formattedDate)
+                } else {
+                    normalized[key].push(line[value])
+                }
             })
-
-            const dt = line.Timestamp.split('_');
-            const formattedDate = dt[1].replaceAll('.', ':')
-            normalized.timestamp.push(formattedDate)
         })
 
         cashedData.current = normalized;
@@ -118,14 +127,9 @@ const Live = () => {
             visible[prop] = normalized[prop].slice(0, visibleLength)
         })
 
-        const position = { lat: visible?.lat[visibleLength-1], lng: visible?.lng[visibleLength-1] };
-        setPosition(position)
-        console.log('path', path)
-        if (refreshPath) {
-            setPath([[position.lat, position.lng]])
-        } else {
-            setPath([...path, [position.lat, position.lng]])
-        }
+        
+        
+        setPath([[visible?.lat[visibleLength-1], visible?.lng[visibleLength-1]]])
 
         setData(visible);
     }

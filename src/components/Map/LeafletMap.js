@@ -14,7 +14,6 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const LeafletMap = ({ position: {lat, lng}, path }) => {
-  // console.log('cord', lat, lng)
   if (!lat || !lng) {
     return null;
   }
