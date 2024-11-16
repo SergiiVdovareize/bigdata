@@ -37,8 +37,41 @@ const dataResolver = {
         return enrichedData;
     },
 
+    readDataType: async (type) => {
+        switch (type) {
+            case 'pedestrian':
+                return await dataResolver.readPedestrians()
+            case 'static':
+                return await dataResolver.readStatic()
+            case 'car':
+                return await dataResolver.readCar()
+            case 'bus':
+                return await dataResolver.readBus()
+            case 'train':
+                return await dataResolver.readTrain()
+            default:
+                return [];
+        }
+    },
+
     readPedestrians: async (filename = 'B_2018.02.11_13.30.46.csv') => {
         return await dataResolver.read(`${telecomBasePath}/pedestrian/${filename}`)
+    },
+
+    readStatic: async (filename = 'A_2018.02.12_16.14.02.csv') => {
+        return await dataResolver.read(`${telecomBasePath}/static/${filename}`)
+    },
+
+    readCar: async (filename = 'B_2018.01.18_14.38.07.csv') => {
+        return await dataResolver.read(`${telecomBasePath}/car/${filename}`)
+    },
+
+    readBus: async (filename = 'B_2018.01.27_12.09.59.csv') => {
+        return await dataResolver.read(`${telecomBasePath}/bus/${filename}`)
+    },
+
+    readTrain: async (filename = 'A_2018.02.05_15.07.33.csv') => {
+        return await dataResolver.read(`${telecomBasePath}/train/${filename}`)
     },
 
     normalize: (data) => {

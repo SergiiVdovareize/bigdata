@@ -16,6 +16,31 @@ code {
     monospace;
 }
 
+.root-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-container {
+  height: 80px; /* Fixed height for the menu */
+  background-color: #8ab1c4;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.menu-item {
+  width: 200px;
+}
+
 .root-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns, each 1 fraction of the available width */
@@ -41,6 +66,10 @@ code {
 }
 
 .home-container {
+  flex: 1; /* Take the remaining height */
+  align-items: center;
+  justify-content: center;
+
   display: flex;
   width: 100%;
   height: 100vh; /* Full screen height */
@@ -49,6 +78,7 @@ code {
 
   .left-column,
   .right-column {
+    height: 100%;
     width: 50%; /* Equal width for both columns */
     display: flex;
     flex-direction: column;
@@ -66,3 +96,6 @@ code {
   }
 }
 
+.selector {
+  width: 100%;
+}

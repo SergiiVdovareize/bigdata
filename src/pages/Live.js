@@ -3,6 +3,7 @@ import CodeRate from "../components/Telecom/CodeRate";
 import LiveLine from "../components/Telecom/LiveLine";
 import TelecomLine2 from "../components/Telecom/TelecomLineV2";
 import dataResolver from "../utils/dataResolver";
+import Menu from "../components/Elements/Menu";
 
 const Live = () => {
     const [data, setData] = useState(null);
@@ -14,10 +15,11 @@ const Live = () => {
     const currentIndex = useRef(visibleLength);
 
     useEffect(() => {
-        readData();
+        readData('pedestrian');
     }, [])
 
     useEffect(() => {
+        console.log('useEffect')
         if (timeoutId.current) {
             clearTimeout(timeoutId.current)
         }
@@ -79,13 +81,12 @@ const Live = () => {
         updatedData.timestamp.push(cashedData.current.timestamp[currentIndex.current])
     
         currentIndex.current = currentIndex.current >= cashedData.current.rsrq.length ? 0 : currentIndex.current + 1
-        // setCurrentData
         setData(updatedData)
     }
 
-    const readData = async () => {
-        const fileName = 'A_2017.11.21_15.35.33.csv';
-        const parsedData = await dataResolver.readPedestrians(fileName)
+    const readData = async (type = null) => {
+        // const fileName = 'A_2017.11.21_15.35.33.csv';
+        const parsedData = await dataResolver.readDataType(type)
         const normalized = {
             rsrp: [],
             rsrq: [],
@@ -95,7 +96,7 @@ const Live = () => {
 
         parsedData.forEach(line => {
             if (!line.RSRP || !line.RSRQ || !line.Timestamp) {
-            return
+                return
             }
 
             normalized.rsrp.push(line.RSRP)
@@ -119,23 +120,32 @@ const Live = () => {
         setData(visible);
     }
 
-    return <div className="home-container">
-        <div className="left-column">
-            <div className="cell chart-wrapper">
-                <LiveLine params={rsrqParams} data={data}/>
-            </div>
-            <div className="cell chart-wrapper">
-                <LiveLine params={rsrpParams} data={data}/>
-            </div>
+    const onTestDataChange = ({value}) => {
+        readData(value);
+    }
+
+    return <div className="root-container">
+        <div className="menu-container">
+            <Menu onTestDataChange={onTestDataChange}/>
         </div>
-        <div className="right-column">
-            <div className="cell chart-wrapper">
-                <LiveLine params={cqiParams} data={data}/>
+        <div className="home-container">
+            <div className="left-column">
+                <div className="cell chart-wrapper">
+                    <LiveLine params={rsrqParams} data={data}/>
+                </div>
+                <div className="cell chart-wrapper">
+                    <LiveLine params={rsrpParams} data={data}/>
+                </div>
             </div>
-            <div className="cell chart-wrapper">
-                <CodeRate data={data}/>
+            <div className="right-column">
+                <div className="cell chart-wrapper">
+                    <LiveLine params={cqiParams} data={data}/>
+                </div>
+                <div className="cell chart-wrapper">
+                    <CodeRate data={data}/>
+                </div>
+                <div className="cell chart-wrapper">CHANNEL QUALITY</div>
             </div>
-            <div className="cell chart-wrapper">Right Cell 3</div>
         </div>
     </div>
 }
