@@ -5,7 +5,7 @@ import dataResolver from "../utils/dataResolver";
 import Menu from "../components/Elements/Menu";
 import LeafletMap from "../components/Map/LeafletMap";
 import Throughput from "../components/Telecom/Throughput";
-import { defaultBandwidth } from "../constants/constants";
+import { defaultBandwidth, defaultMIMOLayers } from "../constants/constants";
 
 const propsMap = {
     rsrp: 'RSRP',
@@ -28,6 +28,7 @@ const Live = () => {
     const [position, setPosition] = useState({});
     const [path, setPath] = useState([]);
     const [bandwidth, setBandwidth] = useState(defaultBandwidth);
+    const [mimo, setMimo] = useState(defaultMIMOLayers);
     
     const visibleLength = 200;
     const currentIndex = useRef(visibleLength);
@@ -145,13 +146,20 @@ const Live = () => {
         setBandwidth(value)
     }
 
+    const onMimoChange = ({value}) => {
+        setMimo(value)
+    }
+
     return <div className="root-container">
         <div className="home-container">
             <div className="left-column">
                 <div className="cell chart-wrapper">
                     <LiveLine params={rsrqParams} data={data}>
                         <div className="floating-menu-container">
-                            <Menu onTestDataChange={onTestDataChange} onBandwidthChange={onBandwidthChange} bandwidth={bandwidth}/>
+                            <Menu 
+                                onTestDataChange={onTestDataChange}
+                                onBandwidthChange={onBandwidthChange}
+                                onMimoChange={onMimoChange}/>
                         </div>
                     </LiveLine>
                 </div>
@@ -167,7 +175,7 @@ const Live = () => {
                     <CodeRate data={data}/>
                 </div>
                 <div className="cell chart-wrapper">
-                    <Throughput data={data} bandwidth={bandwidth}/>
+                    <Throughput data={data} bandwidth={bandwidth} mimo={mimo}/>
                 </div>
                 <div className="cell chart-wrapper">
                     <LeafletMap position={position} path={path}/>

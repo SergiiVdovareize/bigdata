@@ -2,10 +2,28 @@ import React, { useEffect, useRef, useState } from 'react'
 import ReactECharts from 'echarts-for-react'
 import { defaultCarriers, defaultMIMOLayers, defaultOverhead, modulationMap, OFDMSymbolsPerSubframe, resourceBlocksMap } from '../../constants/constants';
 
-const Throughput = ({data, bandwidth}) => {
+const Throughput = ({data, bandwidth, mimo}) => {
   const [chartOption, setChartOption] = useState(null);
   const [throughput, setThroughput] = useState(null);
 
+  let max = 100
+  if (bandwidth > 15) {
+    if (mimo >= 8) {
+      max = 1000
+    } else {
+      max = 500
+    }
+  } else if (bandwidth > 10) {
+    if (mimo >= 8) {
+      max = 500
+    } else if (mimo >= 4) {
+      max = 300
+    }
+  } else if (bandwidth > 5) {
+    if (mimo >= 8) {
+      max = 200
+    }
+  }
 
   useEffect(() => {
     if (!data?.cqi) {
@@ -18,15 +36,10 @@ const Throughput = ({data, bandwidth}) => {
 
     const thr = calculateLTEThroughput(params);
     setThroughput(thr);
-  }, [data?.cqi?.[data?.cqi?.length-1], bandwidth])
+  }, [data?.cqi?.[data?.cqi?.length-1], bandwidth, mimo])
 
   useEffect(() => {
-    // if (length <= 0) {
-    //   return;
-    // }
-
     const option = {
-      // title:' weewf',
       series: [
         {
           radius: "120%", // Reduced size of the gauge
@@ -35,7 +48,7 @@ const Throughput = ({data, bandwidth}) => {
           startAngle: 180,
           endAngle: 0,
           min: 0,
-          max: 100,
+          max,
           splitNumber: 5,
           itemStyle: {
             color: '#58D9F9',
@@ -87,7 +100,7 @@ const Throughput = ({data, bandwidth}) => {
             backgroundColor: '#fff',
             borderColor: '#999',
             borderWidth: 2,
-            width: '80%',
+            width: '110%',
             lineHeight: 50,
             height: 40,
             borderRadius: 3,
@@ -111,7 +124,7 @@ const Throughput = ({data, bandwidth}) => {
           },
           data: [
             {
-              value: throughput,
+              value: throughput || 0,
               name: 'Throughput'
             }
           ]
@@ -153,7 +166,6 @@ const Throughput = ({data, bandwidth}) => {
     const calculateLTEThroughput = ({
       cqi,
       overhead = defaultOverhead,
-      mimoLayers = defaultMIMOLayers,
       carriers = defaultCarriers,
     }) => {
 
@@ -175,7 +187,7 @@ const Throughput = ({data, bandwidth}) => {
       let adjustedThroughput = adjustThroughputForOverhead(totalThroughput, overhead);
 
       // Step 6: Apply MIMO Layers
-      adjustedThroughput = applyMIMOLayers(adjustedThroughput, mimoLayers);
+      adjustedThroughput = applyMIMOLayers(adjustedThroughput, mimo);
 
       // Step 7: Apply Carrier Aggregation
       adjustedThroughput = applyCarrierAggregation(adjustedThroughput, carriers);

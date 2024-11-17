@@ -48,7 +48,14 @@ code {
 }
 
 .menu-item {
-  width: 200px;
+  width: 150px;
+}
+
+.select-label {
+  margin-bottom: 5px;
+  margin-left: 3px;
+  display: block;
+  font-size: 0.8em;
 }
 
 .root-grid-container {
