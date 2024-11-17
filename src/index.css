@@ -31,6 +31,16 @@ code {
   padding: 10px;
 }
 
+.floating-menu-container {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1;
+  padding: 5px;
+  background-color: #d3e9fd9e;
+  border: 1px #9cc1e1 solid;
+}
+
 .main-menu {
   display: flex;
   flex-direction: row;
@@ -93,6 +103,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 }
 

@@ -1,13 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ReactECharts from 'echarts-for-react'
 
-const LiveLine = ({params, data}) => {
+const LiveLine = ({params, data, children}) => {
   const {attr, text, color, min, max} = params
   const [chartOption, setChartOption] = useState(null);
 
   useEffect(() => {
     if (data?.[attr]?.length > 0) {
       const option = {
+        grid: {
+          left: 50,
+          top: 50,
+          right: 30,
+          bottom: 30
+        },
         title: {
           text,
           subtext: 'Test data'
@@ -58,7 +64,10 @@ const LiveLine = ({params, data}) => {
   }, [data?.[attr]])
 
 
-  return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
+  return <>
+    {children}
+    {chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>}
+  </>
 }
 
 export default LiveLine;

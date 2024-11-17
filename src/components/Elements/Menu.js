@@ -3,7 +3,7 @@ import Select from 'react-select'
 import { bandwidthOptions, testDataOptions } from '../../constants/constants'
 
 const Menu = (params) => {
-  const {onTestDataChange} = params
+  const {onTestDataChange, onBandwidthChange, bandwidth} = params
 
     return  <div className='main-menu'>
       <div className='menu-item'>
@@ -19,6 +19,8 @@ const Menu = (params) => {
         <Select 
             className='selector'
             placeholder='Choose bandwidth'
+            defaultValue={bandwidthOptions[3]}
+            onChange={onBandwidthChange}
             options={bandwidthOptions} />
       </div>
 

@@ -1,49 +1,60 @@
 import React, { useEffect, useRef, useState } from 'react'
-import dataResolver from '../../utils/dataResolver';
 import ReactECharts from 'echarts-for-react'
 
 const CodeRate = ({data}) => {
-  // const {attr, text, color, min, max} = params
   const [chartOption, setChartOption] = useState(null);
   const length = data?.rsrq?.length || 0;
 
-  const rsrpRanges = [
-      { min: -112, max: -103, scoreMin: 0, scoreMax: 24 },    // Poor
-      { min: -102, max: -85, scoreMin: 25, scoreMax: 49 },    // Fair
-      { min: -84, max: -75, scoreMin: 50, scoreMax: 74 },     // Good
-      { min: -74, max: 0, scoreMin: 75, scoreMax: 100 }       // Excellent
-  ];
-
-  // Define the ranges for RSRQ (dB)
-  const rsrqRanges = [
-      { min: -11, max: -10, scoreMin: 0, scoreMax: 24 },      // Poor
-      { min: -10, max: -6, scoreMin: 25, scoreMax: 49 },      // Fair
-      { min: -5, max: 0, scoreMin: 50, scoreMax: 74 },        // Good
-      { min: 1, max: 10, scoreMin: 75, scoreMax: 100 }        // Excellent
-  ];
-
-  const getScore = (value, ranges) => {
-    for (const range of ranges) {
-        if (value >= range.min && value <= range.max) {
-            const normalizedValue = (value - range.min) / (range.max - range.min);
-            return range.scoreMin + normalizedValue * (range.scoreMax - range.scoreMin);
-        }
-    }
-    // If the value is outside all ranges, return the closest range boundary score
-    return value < ranges[0].min ? ranges[0].scoreMin : ranges[ranges.length - 1].scoreMax;
-  }
-
-  const getSignal = () => {
+  const getSignalLevel = () => {
     const rsrq = data.rsrq[length-1]
     const rsrp = data.rsrp[length-1]
+    const cqi = data.cqi[length-1]
+    const snr = data.snr[length-1]
 
-    const rsrqScore = getScore(rsrq, rsrqRanges);
-    const rsrpScore = getScore(rsrp, rsrpRanges);
+    
+    // Normalize RSRP (-140 to -50 mapped to 0-100)
+    const rsrpNormalized =
+      rsrp >= -50
+        ? 100
+        : rsrp <= -140
+        ? 0
+        : ((rsrp + 140) / 90) * 100;
 
-    const signalQuality = (rsrpScore + rsrqScore) / 2;
-    return Math.round(signalQuality); // Round to the nearest integer
-  }
   
+    // Normalize RSRQ (-20 to 0 mapped to 0-100)
+    const rsrqNormalized =
+      rsrq >= 0
+        ? 100
+        : rsrq <= -20
+        ? 0
+        : ((rsrq + 20) / 20) * 100;
+  
+    // Normalize SNR (0 to 20 mapped to 0-100)
+    const snrNormalized =
+      snr >= 20 ? 100 : snr <= 0 ? 0 : (snr / 20) * 100;
+  
+    // Normalize CQI (1 to 15 mapped to 0-100, optional)
+    const cqiNormalized =
+      cqi === null
+        ? 0
+        : cqi >= 15
+        ? 100
+        : cqi <= 1
+        ? 0
+        : ((cqi - 1) / 14) * 100;
+
+    
+  
+    // Calculate the final weighted signal quality score
+    const signalQualityScore =
+      0.4 * rsrpNormalized +
+      0.3 * rsrqNormalized +
+      0.2 * snrNormalized +
+      0.1 * cqiNormalized;
+  
+    return Math.round(signalQualityScore * 100) / 100; // Rounded to 2 decimal places
+  }
+
   useEffect(() => {
     if (length <= 0) {
       return;
@@ -52,11 +63,11 @@ const CodeRate = ({data}) => {
     const option = {
       series: [
         {
+          center: ['50%', '75%'],
+          radius: '120%',
           type: 'gauge',
           startAngle: 180,
           endAngle: 0,
-          center: ['50%', '75%'],
-          radius: '90%',
           min: 0,
           max: 1,
           splitNumber: 8,
@@ -127,7 +138,7 @@ const CodeRate = ({data}) => {
           },
           data: [
             {
-              value: getSignal()/100,
+              value: getSignalLevel()/100,
               name: 'Signal Quality'
             }
           ]

@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import CodeRate from "../components/Telecom/CodeRate";
 import LiveLine from "../components/Telecom/LiveLine";
-import TelecomLine2 from "../components/Telecom/TelecomLineV2";
 import dataResolver from "../utils/dataResolver";
 import Menu from "../components/Elements/Menu";
 import LeafletMap from "../components/Map/LeafletMap";
+import Throughput from "../components/Telecom/Throughput";
+import { defaultBandwidth } from "../constants/constants";
 
 const propsMap = {
     rsrp: 'RSRP',
@@ -13,17 +14,20 @@ const propsMap = {
     timestamp: 'Timestamp',
     lng: 'Longitude',
     lat: 'Latitude',
+    snr: 'SNR',
 }
+
+const numberProps = ['rsrp', 'rsrq', 'cqi', 'snr', 'lat', 'lng']
 
 
 const Live = () => {
     const [data, setData] = useState(null);
-    const [currentData, setCurrentData] = useState(null);
     const cashedData = useRef(null);
     const timeoutId = useRef(null);
 
     const [position, setPosition] = useState({});
     const [path, setPath] = useState([]);
+    const [bandwidth, setBandwidth] = useState(defaultBandwidth);
     
     const visibleLength = 200;
     const currentIndex = useRef(visibleLength);
@@ -115,7 +119,7 @@ const Live = () => {
                     const formattedDate = dt[1].replaceAll('.', ':')
                     normalized[key].push(formattedDate)
                 } else {
-                    normalized[key].push(line[value])
+                    normalized[key].push(numberProps.includes(key) ? parseFloat(line[value], 10) : line[value])
                 }
             })
         })
@@ -130,7 +134,6 @@ const Live = () => {
         
         
         setPath([[visible?.lat[visibleLength-1], visible?.lng[visibleLength-1]]])
-
         setData(visible);
     }
 
@@ -138,25 +141,33 @@ const Live = () => {
         readData(value, true);
     }
 
+    const onBandwidthChange = ({value}) => {
+        setBandwidth(value)
+    }
+
     return <div className="root-container">
-        <div className="menu-container">
-            <Menu onTestDataChange={onTestDataChange}/>
-        </div>
         <div className="home-container">
             <div className="left-column">
                 <div className="cell chart-wrapper">
-                    <LiveLine params={rsrqParams} data={data}/>
+                    <LiveLine params={rsrqParams} data={data}>
+                        <div className="floating-menu-container">
+                            <Menu onTestDataChange={onTestDataChange} onBandwidthChange={onBandwidthChange} bandwidth={bandwidth}/>
+                        </div>
+                    </LiveLine>
                 </div>
                 <div className="cell chart-wrapper">
                     <LiveLine params={rsrpParams} data={data}/>
                 </div>
-            </div>
-            <div className="right-column">
                 <div className="cell chart-wrapper">
                     <LiveLine params={cqiParams} data={data}/>
                 </div>
+            </div>
+            <div className="right-column">
                 <div className="cell chart-wrapper">
                     <CodeRate data={data}/>
+                </div>
+                <div className="cell chart-wrapper">
+                    <Throughput data={data} bandwidth={bandwidth}/>
                 </div>
                 <div className="cell chart-wrapper">
                     <LeafletMap position={position} path={path}/>
