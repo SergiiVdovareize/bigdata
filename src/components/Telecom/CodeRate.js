@@ -61,6 +61,10 @@ const CodeRate = ({data}) => {
     }
 
     const option = {
+      title: {
+        text: 'Signal Quality',
+        left: 'left',
+      },
       series: [
         {
           center: ['50%', '75%'],
@@ -128,8 +132,8 @@ const CodeRate = ({data}) => {
             fontSize: 20
           },
           detail: {
-            fontSize: 30,
-            offsetCenter: [0, '-35%'],
+            fontSize: 50,
+            offsetCenter: [0, '-10%'],
             valueAnimation: true,
             formatter: function (value) {
               return Math.round(value * 100) + '';
@@ -139,7 +143,6 @@ const CodeRate = ({data}) => {
           data: [
             {
               value: getSignalLevel()/100,
-              name: 'Signal Quality'
             }
           ]
         }

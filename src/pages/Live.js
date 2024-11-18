@@ -46,7 +46,7 @@ const Live = () => {
     }, [data?.rsrq])
 
     const rsrqParams = {
-        text: 'RSRQ Live',
+        text: 'RSRQ',
         attr: 'rsrq',
         color: 'brown',
         min: -20,
@@ -54,7 +54,7 @@ const Live = () => {
     }
 
     const rsrpParams = {
-        text: 'RSRP Live',
+        text: 'RSRP',
         attr: 'rsrp',
         color: 'red',
         min: -120,
@@ -62,7 +62,7 @@ const Live = () => {
     }
 
     const cqiParams = {
-        text: 'CQI Live',
+        text: 'CQI',
         attr: 'cqi',
         color: 'green',
         min: 0,

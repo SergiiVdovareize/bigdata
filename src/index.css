@@ -39,7 +39,12 @@ code {
   padding: 5px;
   background-color: #d3e9fd9e;
   border: 1px #9cc1e1 solid;
+
 }
+.floating-menu-container:hover {
+  background-color: #afd1f1;
+}
+
 
 .main-menu {
   display: flex;

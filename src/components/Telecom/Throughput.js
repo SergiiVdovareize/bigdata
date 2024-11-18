@@ -40,6 +40,10 @@ const Throughput = ({data, bandwidth, mimo}) => {
 
   useEffect(() => {
     const option = {
+      title: {
+        text: 'Throughput',
+        left: 'left',
+      },
       series: [
         {
           radius: "120%", // Reduced size of the gauge
@@ -98,13 +102,13 @@ const Throughput = ({data, bandwidth, mimo}) => {
           },
           detail: {
             backgroundColor: '#fff',
-            borderColor: '#999',
-            borderWidth: 2,
+            // borderColor: '#999',
+            // borderWidth: 2,
             width: '110%',
             lineHeight: 50,
             height: 40,
-            borderRadius: 3,
-            offsetCenter: [0, '35%'],
+            // borderRadius: 3,
+            offsetCenter: ['15%', '35%'],
             valueAnimation: true,
             formatter: function (value) {
               return '{value|' + value.toFixed(1) + '}{unit|mbps}';
@@ -125,7 +129,6 @@ const Throughput = ({data, bandwidth, mimo}) => {
           data: [
             {
               value: throughput || 0,
-              name: 'Throughput'
             }
           ]
         }
