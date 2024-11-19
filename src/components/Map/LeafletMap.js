@@ -13,11 +13,12 @@ const DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const LeafletMap = ({ position: {lat, lng}, path }) => {
+const LeafletMap = ({data: { position: {lat, lng}, path }}) => {
   if (!lat || !lng) {
     return null;
   }
 
+  console.log('lat, lng', lat, lng)
 
   const DynamicMarker = () => {
     const map = useMap();

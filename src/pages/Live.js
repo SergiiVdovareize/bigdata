@@ -42,7 +42,7 @@ const Live = () => {
             clearTimeout(timeoutId.current)
         }
 
-        timeoutId.current = setTimeout(watchData, 1000)
+        timeoutId.current = setTimeout(watchData, 400)
     }, [data?.rsrq])
 
     const rsrqParams = {
@@ -178,7 +178,7 @@ const Live = () => {
                     <Throughput data={data} bandwidth={bandwidth} mimo={mimo}/>
                 </div>
                 <div className="cell chart-wrapper">
-                    <LeafletMap position={position} path={path}/>
+                    <LeafletMap data={{position, path}}/>
                 </div>
             </div>
         </div>
