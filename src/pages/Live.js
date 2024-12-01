@@ -25,8 +25,7 @@ const Live = () => {
     const cashedData = useRef(null);
     const timeoutId = useRef(null);
 
-    const [position, setPosition] = useState({});
-    const [path, setPath] = useState([]);
+    const [mapData, setMapData] = useState({position: {}, path: []})
     const [bandwidth, setBandwidth] = useState(defaultBandwidth);
     
     const visibleLength = 200;
@@ -92,11 +91,12 @@ const Live = () => {
         currentIndex.current = currentIndex.current >= cashedData.current.rsrq.length ? 0 : currentIndex.current + 1
         setData(updatedData)
 
-        const position = { lat: updatedData?.lat[visibleLength-1], lng: updatedData?.lng[visibleLength-1] };
-        setPosition(position)
-
-        if (path[path.length-1][0] !== position.lat || path[path.length-1][1] !== position.lng) {
-            setPath([...path, [position.lat, position.lng]])
+        const newPosition = { lat: updatedData?.lat[visibleLength-1], lng: updatedData?.lng[visibleLength-1] }
+        if (mapData.path.length === 0 || mapData.path[mapData.path.length-1][0] !== newPosition.lat || mapData.path[mapData.path.length-1][1] !== newPosition.lng) {
+            setMapData({
+                position: newPosition,
+                path: [...mapData.path, [newPosition.lat, newPosition.lng]]
+            })
         }
     }
 
@@ -130,10 +130,17 @@ const Live = () => {
         Object.keys(propsMap).forEach(prop => {
             visible[prop] = normalized[prop].slice(0, visibleLength)
         })
+        
+        const initPath = []
+        for (let i = 0; i < visibleLength; i++) {
+            initPath.push([visible.lat[i], visible.lng[i]])
+        }
 
-        
-        
-        setPath([[visible?.lat[visibleLength-1], visible?.lng[visibleLength-1]]])
+        setMapData({
+            position: { lat: visible?.lat[visibleLength-1], lng: visible?.lng[visibleLength-1] },
+            path: initPath
+        })
+
         setData(visible);
     }
 
@@ -170,7 +177,7 @@ const Live = () => {
                     <Throughput data={data} bandwidth={bandwidth}/>
                 </div>
                 <div className="cell chart-wrapper">
-                    <LeafletMap position={position} path={path}/>
+                    <LeafletMap data={mapData}/>
                 </div>
             </div>
         </div>
