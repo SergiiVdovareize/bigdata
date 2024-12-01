@@ -15,6 +15,13 @@ export const testDataOptions = [
     { value: 'train', label: 'Train' },
 ]
 
+export const mimoOptions = [
+    { value: 1, label: '1x1' },
+    { value: 2, label: '2x2' },
+    { value: 4, label: '4x4' },
+    { value: 8, label: '8x8' },
+]
+
 export const resourceBlocksMap = {
     1: 6,
     3: 15,

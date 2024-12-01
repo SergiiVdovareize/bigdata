@@ -2,10 +2,28 @@ import React, { useEffect, useRef, useState } from 'react'
 import ReactECharts from 'echarts-for-react'
 import { defaultCarriers, defaultMIMOLayers, defaultOverhead, modulationMap, OFDMSymbolsPerSubframe, resourceBlocksMap } from '../../constants/constants';
 
-const Throughput = ({data, bandwidth}) => {
+const Throughput = ({data, bandwidth, mimo}) => {
   const [chartOption, setChartOption] = useState(null);
   const [throughput, setThroughput] = useState(null);
 
+  let max = 100
+  if (bandwidth > 15) {
+    if (mimo >= 8) {
+      max = 1000
+    } else {
+      max = 500
+    }
+  } else if (bandwidth > 10) {
+    if (mimo >= 8) {
+      max = 500
+    } else if (mimo >= 4) {
+      max = 300
+    }
+  } else if (bandwidth > 5) {
+    if (mimo >= 8) {
+      max = 200
+    }
+  }
 
   useEffect(() => {
     if (!data?.cqi) {
@@ -17,16 +35,17 @@ const Throughput = ({data, bandwidth}) => {
     };
 
     const thr = calculateLTEThroughput(params);
-    setThroughput(thr);
-  }, [data?.cqi?.[data?.cqi?.length-1], bandwidth])
+    if (thr) {
+      setThroughput(thr);
+    }
+  }, [data?.cqi?.[data?.cqi?.length-1], bandwidth, mimo])
 
   useEffect(() => {
-    // if (length <= 0) {
-    //   return;
-    // }
-
     const option = {
-      // title:' weewf',
+      title: {
+        text: 'Throughput',
+        left: 'left',
+      },
       series: [
         {
           radius: "120%", // Reduced size of the gauge
@@ -35,7 +54,7 @@ const Throughput = ({data, bandwidth}) => {
           startAngle: 180,
           endAngle: 0,
           min: 0,
-          max: 100,
+          max,
           splitNumber: 5,
           itemStyle: {
             color: '#58D9F9',
@@ -85,13 +104,13 @@ const Throughput = ({data, bandwidth}) => {
           },
           detail: {
             backgroundColor: '#fff',
-            borderColor: '#999',
-            borderWidth: 2,
-            width: '80%',
+            // borderColor: '#999',
+            // borderWidth: 2,
+            width: '110%',
             lineHeight: 50,
             height: 40,
-            borderRadius: 3,
-            offsetCenter: [0, '35%'],
+            // borderRadius: 3,
+            offsetCenter: ['15%', '35%'],
             valueAnimation: true,
             formatter: function (value) {
               return '{value|' + value.toFixed(1) + '}{unit|mbps}';
@@ -111,8 +130,7 @@ const Throughput = ({data, bandwidth}) => {
           },
           data: [
             {
-              value: throughput,
-              name: 'Throughput'
+              value: throughput || 0,
             }
           ]
         }
@@ -125,66 +143,62 @@ const Throughput = ({data, bandwidth}) => {
 
   const getParamsFromCQI = (cqi) => modulationMap[cqi] || { modulation: "N/A", modulationOrder: 0, codeRate: 0 };
 
-    // Calculate Throughput per RB (bps)
-    const calculateThroughputPerRB = (modulationOrder, codeRate) =>
-      modulationOrder * codeRate * 12 * OFDMSymbolsPerSubframe;
+  const calculateThroughputPerRB = (modulationOrder, codeRate) =>
+    modulationOrder * codeRate * 12 * OFDMSymbolsPerSubframe;
 
-    // Calculate Total Throughput for a single carrier
-    const calculateTotalThroughput = (throughputPerRB, numRBs) =>
-      throughputPerRB * numRBs * 1000;
+  const calculateTotalThroughput = (throughputPerRB, numRBs) =>
+    throughputPerRB * numRBs * 1000;
 
-    // Adjust for Overhead
-    const adjustThroughputForOverhead = (totalThroughput, overhead = defaultOverhead) =>
-      totalThroughput * (1 - overhead);
+  const adjustThroughputForOverhead = (totalThroughput, overhead = defaultOverhead) =>
+    totalThroughput * (1 - overhead);
 
-    // Convert bps to Mbps
-    const convertToMbps = (throughput) => throughput / 1e6;
+  const convertToMbps = (throughput) => throughput / 1e6;
 
-    // Apply MIMO Layers
-    const applyMIMOLayers = (throughput, mimoLayers = defaultMIMOLayers) =>
-      throughput * mimoLayers;
+  const applyMIMOLayers = (throughput, mimoLayers = defaultMIMOLayers) =>
+    throughput * mimoLayers;
 
-    // Apply Carrier Aggregation
-    const applyCarrierAggregation = (throughput, carriers = defaultCarriers) =>
-      throughput * carriers;
+  // Apply Carrier Aggregation
+  const applyCarrierAggregation = (throughput, carriers = defaultCarriers) =>
+    throughput * carriers;
 
-    
-    // Full LTE Throughput Calculation
-    const calculateLTEThroughput = ({
-      cqi,
-      overhead = defaultOverhead,
-      mimoLayers = defaultMIMOLayers,
-      carriers = defaultCarriers,
-    }) => {
+  
+  // Full LTE Throughput Calculation
+  const calculateLTEThroughput = ({
+    cqi,
+    overhead = defaultOverhead,
+    carriers = defaultCarriers,
+  }) => {
 
-      // Step 1: Get the number of Resource Blocks (RBs) for the given bandwidth
-      const numRBs = resourceBlocksMap[bandwidth]
-      if (numRBs === 0) throw new Error("Invalid bandwidth. Choose from 1.4, 3, 5, 10, 15, 20 MHz.");
+    // Step 1: Get the number of Resource Blocks (RBs) for the given bandwidth
+    const numRBs = resourceBlocksMap[bandwidth]
+    if (!numRBs) {
+      return null;
+    }
 
-      // Step 2: Get Modulation Order and Code Rate from CQI
-      const { modulation, modulationOrder, codeRate } = getParamsFromCQI(cqi);
-      if (modulationOrder === 0) throw new Error("Invalid CQI. Choose a value between 1 and 15.");
+    // Step 2: Get Modulation Order and Code Rate from CQI
+    const { modulation, modulationOrder, codeRate } = getParamsFromCQI(cqi);
+    if (modulationOrder === 0) {
+      return null;
+    }
 
-      // Step 3: Calculate Throughput per RB
-      const throughputPerRB = calculateThroughputPerRB(modulationOrder, codeRate);
+    // Step 3: Calculate Throughput per RB
+    const throughputPerRB = calculateThroughputPerRB(modulationOrder, codeRate);
 
-      // Step 4: Calculate Total Throughput for a single carrier
-      const totalThroughput = calculateTotalThroughput(throughputPerRB, numRBs);
+    // Step 4: Calculate Total Throughput for a single carrier
+    const totalThroughput = calculateTotalThroughput(throughputPerRB, numRBs);
 
-      // Step 5: Adjust for Overhead
-      let adjustedThroughput = adjustThroughputForOverhead(totalThroughput, overhead);
+    // Step 5: Adjust for Overhead
+    let adjustedThroughput = adjustThroughputForOverhead(totalThroughput, overhead);
 
-      // Step 6: Apply MIMO Layers
-      adjustedThroughput = applyMIMOLayers(adjustedThroughput, mimoLayers);
+    // Step 6: Apply MIMO Layers
+    adjustedThroughput = applyMIMOLayers(adjustedThroughput, mimo);
 
-      // Step 7: Apply Carrier Aggregation
-      adjustedThroughput = applyCarrierAggregation(adjustedThroughput, carriers);
+    // Step 7: Apply Carrier Aggregation
+    adjustedThroughput = applyCarrierAggregation(adjustedThroughput, carriers);
 
-      // Step 8: Convert to Mbps
-      return  convertToMbps(adjustedThroughput).toFixed(2);
-    };
-
-
+    // Step 8: Convert to Mbps
+    return  convertToMbps(adjustedThroughput).toFixed(2);
+  };
 
   return chartOption && <ReactECharts option={chartOption} style={{height: '100%'}}/>;
 }
